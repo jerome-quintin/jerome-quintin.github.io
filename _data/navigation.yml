@@ -1,3 +1,7 @@
 main:
   - title: "About"
     url: /about/
+
+- title: CV
+  url: /JeromeQuintinCV.pdf
+  alt: Curriculum Vitae
