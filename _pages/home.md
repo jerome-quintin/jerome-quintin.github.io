@@ -17,14 +17,14 @@ feature_row:
     btn_label: "Learn more"
   - image_path: /assets/images/Adeltasvareps.png
     alt: "research"
-    title: "research"
+    title: "Research"
     excerpt: "Learn more about my research."
     url: "/research/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/blackboard2.jpg
     alt: "talks"
-    title: "talks"
+    title: "Talks"
     excerpt: "Have a look at some of the talks I gave."
     url: "/talks/"
     btn_class: "btn--primary"
