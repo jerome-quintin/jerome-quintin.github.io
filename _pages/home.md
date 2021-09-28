@@ -6,7 +6,29 @@ header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/blackboard1.jpg
 excerpt: >
-  Under construction!
+  Welcome to my personal website!
+feature_row:
+  - image_path: /assets/images/bio-photo.jpg
+    alt: "about me"
+    title: "About me"
+    excerpt: "Learn about who I am and what I do."
+    url: "/about/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /assets/images/Adeltasvareps.png
+    alt: "research"
+    title: "research"
+    excerpt: "Learn more about my research."
+    url: "/research/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /assets/images/blackboard2.jpg
+    alt: "talks"
+    title: "talks"
+    excerpt: "Have a look at some of the talks I gave."
+    url: "/talks/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"      
 ---
 
 {% include feature_row %}
