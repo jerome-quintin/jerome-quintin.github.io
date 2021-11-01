@@ -13,6 +13,6 @@ I generally prefer giving blackboard talks, but sometimes slides are simply bett
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/C8TzJ7rhIVU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-- Talk given at the Harvard Institute for Theory and Computation (ITC Luncheon) on 13/09/2018 about [my paper on black hole formation in a contracting universe](https://arxiv.org/abs/1609.02556): slides. See also the presentation on YouTube below.
+- Talk given at the Harvard Institute for Theory and Computation ([ITC Luncheon](https://itc.cfa.harvard.edu/luncheons)) on 13/09/2018 about [my paper on black hole formation in a contracting universe](https://arxiv.org/abs/1609.02556): slides. See also the presentation on YouTube below.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/odxTFFjWw4I?start=3070" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
