@@ -3,7 +3,7 @@ layout: splash
 permalink: /
 hidden: true
 header:
-  overlay_color: "#000000"
+  overlay_color: "#5e616c"
   overlay_image: /assets/images/blackboard1.jpg
 excerpt: >
   Welcome to my personal website!
