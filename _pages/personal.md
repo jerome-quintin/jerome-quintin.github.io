@@ -25,16 +25,3 @@ Physical activity plays an important role in my life, whether to stay healthy (p
 <p><p>
 
 I play the violin and the drums, though not as much as I'd like to these days. However, I always listen to something while working. I've always liked classical music. My interest generally decreases in reversed chronological order, i.e., from contemporary to baroque, but I have many crushes from the modern and romantic periods. Besides, I like many genres of electronic music, often when it's instrumental and well orchestrated. Finally, my passion for the drums comes from rock and jazz.
-
-<div class="width: 800px; height: 400px; background-color: yellow; margin-left: auto; margin-right: auto; margin-top: 0px; text-align: center; overflow: hidden;">
-    <span id="float: left; margin: 0px; padding: 0px; position: relative; left: 0px;"></span>
-    <span id="float: left; margin: 0px; padding: 0px; position: relative; left: -800px;"></span>
-    <div class="width: 2400px; background-color: red; height: 400px; clear: both; position: relative; -webkit-transition: left 2s; -moz-transition: left 2s; -o-transition: left 2s; transition: left 2s;">
-        <img src="../assets/images/Lausanne_musee_olympique.png" alt="me" />
-        <img src="../assets/images/skiMassifSud.png" alt="me" />
-    </div>
-    <div class="position: relative; top: -20px;">
-        <a href="#slider-image-1" class="display: inline-block; height: 10px; width: 10px; border-radius: 5px; background-color: brown;"></a>
-        <a href="#slider-image-2" class="display: inline-block; height: 10px; width: 10px; border-radius: 5px; background-color: brown;"></a>
-    </div>
-</div>
