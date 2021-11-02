@@ -26,6 +26,15 @@ Physical activity plays an important role in my life, whether to stay healthy (p
 
 I play the violin and the drums, though not as much as I'd like to these days. However, I always listen to something while working. I've always liked classical music. My interest generally decreases in reversed chronological order, i.e., from contemporary to baroque, but I have many crushes from the modern and romantic periods. Besides, I like many genres of electronic music, often when it's instrumental and well orchestrated. Finally, my passion for the drums comes from rock and jazz.
 
-{{< gallery dir="/assets/images/gallery/" />}} {{< load-photoswipe >}}
+gallery2:
+  - url: https://flic.kr/p/8a6Ven
+    image_path: https://farm2.staticflickr.com/1272/4697500467_8294dac099_q.jpg
+    alt: "Black and grays with a hint of green"
+  - url: https://flic.kr/p/8a738X
+    image_path: https://farm5.staticflickr.com/4029/4697523701_249e93ba23_q.jpg
+    alt: "Made for open text placement"
+  - url: https://flic.kr/p/8a6VXP
+    image_path: https://farm5.staticflickr.com/4046/4697502929_72c612c636_q.jpg
+    alt: "Fog in the trees"
 
-test
+{% include gallery class="full" caption="Here are some pictures in various contexts." %}
