@@ -112,7 +112,11 @@ defaults:
       layout: single
       author_profile: true
 
-
+footer_scripts:
+  - https://code.jquery.com/jquery-1.12.4.min.js
+  - /static/js/load-photoswipe.js
+  - https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js
 
 category_archive:
   type: liquid
