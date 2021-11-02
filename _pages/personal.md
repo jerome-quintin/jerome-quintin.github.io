@@ -1,6 +1,19 @@
 ---
 permalink: /personal/
 title: "Personal"
+gallery:
+  - url: /assets/images/gallery/DSCN5079.jpg
+    image_path: /assets/images/gallery/DSCN5079.jpg
+    alt: "placeholder image 1"
+    title: "Image 1 title caption"
+  - url: /assets/images/gallery/DSCN5252.jpg
+    image_path: /assets/images/gallery/DSCN5252.jpg
+    alt: "placeholder image 2"
+    title: "Image 2 title caption"
+  - url: /assets/images/gallery/DSCN5411.jpg
+    image_path: /assets/images/gallery/DSCN5411.jpg
+    alt: "placeholder image 3"
+    title: "Image 3 title caption"
 ---
 
 Here are some of the things I do to keep a balanced life. Some of the things I like include sports, music, traveling, and spending time with familly and friends...
