@@ -14,6 +14,14 @@ gallery:
     image_path: /assets/images/gallery/courseMontreal.jpg
     alt: "Montréal, QC, 2019"
     title: "Montréal, QC, 2019"
+  - url: /assets/images/gallery/Massif2017.jpg
+    image_path: /assets/images/gallery/Massif2017.jpg
+    alt: "Massif de la Petite-Rivière-Saint-François, Charlevoix, QC, 2017"
+    title: "Massif de la Petite-Rivière-Saint-François, Charlevoix, QC, 2017"
+  - url: /assets/images/gallery/kayak.jpg
+    image_path: /assets/images/gallery/kayak.jpg
+    alt: "La Tuque, Mauricie, QC, 2015"
+    title: "La Tuque, Mauricie, QC, 2015"
   - url: /assets/images/gallery/DSCN7181.jpg
     image_path: /assets/images/gallery/DSCN7181.jpg
     alt: "Mont Albert, Gaspésie, QC, 2015"
@@ -38,6 +46,18 @@ gallery:
     image_path: /assets/images/gallery/20141001_133241.jpg
     alt: "McConnell Arena, McGill University, Montréal, QC, 2014"
     title: "McConnell Arena, McGill University, Montréal, QC, 2014"
+  - url: /assets/images/gallery/mt-wash.jpg
+    image_path: /assets/images/gallery/mt-wash.jpg
+    alt: "Huntington Ravine, Mount Washington, NH, 2013"
+    title: "Huntington Ravine, Mount Washington, NH, 2013"
+  - url: /assets/images/gallery/patinQuebec.jpg
+    image_path: /assets/images/gallery/patinQuebec.jpg
+    alt: "Québec city, QC, 2012"
+    title: "Québec city, QC, 2012"
+  - url: /assets/images/gallery/Fernie.jpg
+    image_path: /assets/images/gallery/Fernie.jpg
+    alt: "Fernie, BC, 2011"
+    title: "Fernie, BC, 2011"
   - url: /assets/images/gallery/DSCN5079.jpg
     image_path: /assets/images/gallery/DSCN5079.jpg
     alt: "Tuckerman Ravine, Mount Washington, NH, 2010"
