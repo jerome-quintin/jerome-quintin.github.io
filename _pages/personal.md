@@ -2,18 +2,58 @@
 permalink: /personal/
 title: "Personal"
 gallery:
+  - url: /assets/images/gallery/20201231_092247.jpg
+    image_path: /assets/images/gallery/20201231_092247.jpg
+    alt: "Mont-Tremblant, QC, 2021"
+    title: "Mont-Tremblant, QC, 2021"
+  - url: /assets/images/gallery/IMG_0521.jpg
+    image_path: /assets/images/gallery/IMG_0521.jpg
+    alt: "Mont-Tremblant, QC, 2020"
+    title: "Mont-Tremblant, QC, 2020"
+  - url: /assets/images/gallery/courseMontreal.jpg
+    image_path: /assets/images/gallery/courseMontreal.jpg
+    alt: "Montréal, QC, 2019"
+    title: "Montréal, QC, 2019"
+  - url: /assets/images/gallery/DSCN7181.jpg
+    image_path: /assets/images/gallery/DSCN7181.jpg
+    alt: "Mont Albert, Gaspésie, QC, 2015"
+    title: "Mont Albert, Gaspésie, QC, 2015"
+  - url: /assets/images/gallery/IMG_1608.jpg
+    image_path: /assets/images/gallery/IMG_1608.jpg
+    alt: "Harder Kulm, Interlaken, CH, 2015"
+    title: "Harder Kulm, Interlaken, CH, 2015"
+  - url: /assets/images/gallery/Lausanne_musee_olympique.jpg
+    image_path: /assets/images/gallery/Lausanne_musee_olympique.jpg
+    alt: "Lausanne, CH, 2015"
+    title: "Lausanne, CH, 2015"
+  - url: /assets/images/gallery/IMG_0127.jpg
+    image_path: /assets/images/gallery/IMG_0127.jpg
+    alt: "Sainte-Brigide-d'Iberville, Montérégie, QC, 2015"
+    title: "Sainte-Brigide-d'Iberville, Montérégie, QC, 2015"
+  - url: /assets/images/gallery/skiMassifSud.jpg
+    image_path: /assets/images/gallery/skiMassifSud.jpg
+    alt: "Massif du Sud, QC, 2014"
+    title: "Massif du Sud, QC, 2014"
+  - url: /assets/images/gallery/20141001_133241.jpg
+    image_path: /assets/images/gallery/20141001_133241.jpg
+    alt: "McConnell Arena, McGill University, Montréal, QC, 2014"
+    title: "McConnell Arena, McGill University, Montréal, QC, 2014"
   - url: /assets/images/gallery/DSCN5079.jpg
     image_path: /assets/images/gallery/DSCN5079.jpg
-    alt: "placeholder image 1"
-    title: "Image 1 title caption"
+    alt: "Tuckerman Ravine, Mount Washington, NH, 2010"
+    title: "Tuckerman Ravine, Mount Washington, NH, 2010"
   - url: /assets/images/gallery/DSCN5252.jpg
     image_path: /assets/images/gallery/DSCN5252.jpg
-    alt: "placeholder image 2"
-    title: "Image 2 title caption"
+    alt: "Mount Lafayette, NH, 2010"
+    title: "Mount Lafayette, NH, 2010"
   - url: /assets/images/gallery/DSCN5411.jpg
     image_path: /assets/images/gallery/DSCN5411.jpg
-    alt: "placeholder image 3"
-    title: "Image 3 title caption"
+    alt: "Cabot Trail, NS, 2010"
+    title: "Cabot Trail, NS, 2010 (the two cyclists in the picture are my father and me)"
+  - url: /assets/images/gallery/courseOrford.jpg
+    image_path: /assets/images/gallery/courseOrford.jpg
+    alt: "Mont Orford, QC, 2009"
+    title: "Mont Orford, QC, 2009"
 ---
 
 Here are some of the things I do to keep a balanced life. Some of the things I like include sports, music, traveling, and spending time with familly and friends...
