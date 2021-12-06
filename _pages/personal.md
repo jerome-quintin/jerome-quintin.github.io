@@ -76,7 +76,7 @@ gallery:
     title: "Mont Orford, QC, 2009"
 ---
 
-Here are some of the things I do to keep a balanced life. Some of the things I like include sports, music, traveling, reading, and spending time with familly and friends...
+Here are some of the things I do to keep a balanced life. Some of the things I like include sports, music, traveling, reading, and spending time with family and friends...
 
 Physical activity plays an important role in my life, whether to stay healthy (physically and mentally) or just for pleasure. This goes hand in hand with the fact that I'm an outdoor lover. I'm especially a winter lover (["Mon pays, ce n'est pas un pays, c'est l'hiver"](https://www.thecanadianencyclopedia.ca/en/article/mon-pays)). I practice alpine skiing, telemark skiing, ski mountaineering, cross-country skiing, ice hockey, speed skating, figure skating, snowshoeing, road and trail running, road cycling, cross-country mountain biking, hiking, soccer, and tennis.
 
