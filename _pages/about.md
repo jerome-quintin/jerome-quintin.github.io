@@ -8,7 +8,7 @@ I am a theoretical physicist working at the interface between high-energy physic
 Brief bio
 ===============
 
-I am originally from the Province of Québec in Canada (my mother tongue is Québecois French).
+I am originally from the Province of Québec in Canada (my mother tongue is Québecois French). My first name actually spells Jérôme.
 
 I was raised doing competitive sports (mostly figure skating, but also short track speed skating), but I've always answered the question "What do you want to be when you grow up?" with "Astrophysicist!" (Not completely true. Very young my answer was actually "paleontologist.") I can trace it back to a fascination about planets and geometry, quickly reinforced by reading [Hubert Reeves](https://www.hubertreeves.info).
 
