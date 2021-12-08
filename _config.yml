@@ -59,7 +59,7 @@ analytics:
   provider: "google-gtag"
   google:
     tracking_id: "G-9KNWW8S022"
-    anonymize_ip: true
+    anonymize_ip: false
 
 author:
   name   : "Jerome Quintin"
