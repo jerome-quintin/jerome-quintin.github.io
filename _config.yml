@@ -56,7 +56,7 @@ plugins:
   - jekyll-include-cache
 
 analytics:
-  provider: "google"
+  provider: "google-gtag"
   google:
     tracking_id: "G-9KNWW8S022"
     anonymize_ip: true
@@ -68,14 +68,26 @@ author:
   #location         : "Potsdam, Germany"
   email            : "jerome.quintin@aei.mpg.de"
   #github           : "jerome-quintin"
-  arxiv            : "quintin_j_1"
-  orcid            : "0000-0003-4532-7026"
-  inspire          : "Jerome.Quintin.1"
+  #arxiv            : "quintin_j_1"
+  #orcid            : "0000-0003-4532-7026"
+  #inspire          : "Jerome.Quintin.1"
   linkedin         : "jerome-quintin-1b466363"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://jerome-quintin.github.io"
+    - label: "arXiv"
+      icon: "ai ai-arxiv-square ai-3x"
+      url: "https://arxiv.org/a/quintin_j_1.html"
+    - label: "inSPIRE-HEP"
+      icon: "ai ai-inspire-square ai-3x"
+      url: "https://inspirehep.net/authors/1344967?ui-citation-summary=true"
+    - label: "SAO/NASA ADS"
+      icon: "ai ai-ads-square ai-3x"
+      url: "https://ui.adsabs.harvard.edu/search/p_=0&q=docs(library%2FCJaTKNPHThyCaiEhjcmugQ)&sort=date%20desc%2C%20bibcode%20desc"
+    - label: "ORCiD"
+      icon: "ai ai-orcid-square ai-3x"
+      url: "https://orcid.org/0000-0003-4532-7026"
       #    - label: "Twitter"
       #      icon: "fab fa-fw fa-twitter-square"
       #      url: "https://twitter.com/"
