@@ -55,12 +55,6 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
-analytics:
-  provider: "google-gtag"
-  google:
-    tracking_id: "G-9KNWW8S022"
-    anonymize_ip: false
-
 author:
   name   : "Jerome Quintin"
   avatar : "/assets/images/bio-photo.jpg"
