@@ -22,6 +22,13 @@ github_username: jerome-quintin
 minimal_mistakes_skin: air
 search: true
 
+# Analytics
+analytics:
+  provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
+  google:
+    tracking_id          : "G-9KNWW8S022"
+    anonymize_ip         : false # true, false (default)
+
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
@@ -54,12 +61,6 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
-
-analytics:
-  provider: "google-gtag"
-  google:
-    tracking_id: "G-9KNWW8S022"
-    anonymize_ip: false
 
 author:
   name   : "Jerome Quintin"
