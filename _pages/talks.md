@@ -15,7 +15,6 @@ I gave a close version of this talk also during an online workshop on 08/11/2021
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SIbLJgtFqq4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
 - Online talk given for the [Copernicus Webinar and Colloquium Series on 25/10/2021](https://indico.cern.ch/event/936284/contributions/4579351/) mainly about [my paper on viscosity and anisotropies](https://arxiv.org/abs/2109.11701) (but also briefly talking about [arXiv:1711.10472](https://arxiv.org/abs/1711.10472)): [slides](../assets/docs/Quintin_slides_Copernicus.pdf){: .btn .btn--info}
 
 - Online seminar given to the [USTC Particle Cosmology Group](http://cospa.ustc.edu.cn) on 19/02/2021 about [my paper on quantum circuit complexity of cosmological perturbations in primordial cosmology](https://arxiv.org/abs/2012.04911): [slides](../assets/docs/slides_Jerome_Quintin_USTC.pdf){: .btn .btn--info}
