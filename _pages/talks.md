@@ -11,7 +11,7 @@ I gave a longer version of this talk also at [McGill on 01/12/2021](https://www.
 - Online talk given during the conference [Alternative Gravities and Fundamental Cosmology on 06/09/2021](https://indico.cern.ch/event/873762/) mainly about [my paper on the principle of finite amplitudes](https://arxiv.org/abs/2102.05550): [slides](../assets/docs/slides_AltFunCosmo21_Quintin.pdf){: .btn .btn--info}  
 I gave a close version of this talk also during an online workshop on 08/11/2021 organized by the Yukawa Institute for Theoretical Physics (Kyoto University), [Recent Progress of Quantum Cosmology](https://www2.yukawa.kyoto-u.ac.jp/~rpqc2021/program.php).
 
-- Online talk given at the Fields Institute to mathematicians on 21/07/2022 as part of the [Low Regularity Physics and Geometry Seminar](https://sites.google.com/site/professorsormani/home/lorephygeseminar) about the stability of modified gravity from the point of effective field theory:
+- Online talk given at the Fields Institute to mathematicians on 21/07/2022 as part of the [Low Regularity Physics and Geometry Seminar](https://sites.google.com/site/professorsormani/home/lorephygeseminar) about the stability of modified gravity from the point of view of effective field theory:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SIbLJgtFqq4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
