@@ -5,7 +5,7 @@ title: "Community, Outreach and Press"
 
 ## Community
 
-- In 2020 I organized a [Winter School on Theoretical Cosmology at Nordita](https://agenda.nordita.org/conferenceDisplay.py?confId=6662)
+- In 2020 I organized a [Winter School on Theoretical Cosmology at Nordita](https://www.nordita.org/events/list/index.php?eventlist_select=s&eventlist_displayinfo=m&eventlist_period=f)
 - At McGill I was the [hep-th journal club organizer](http://www.physics.mcgill.ca/~jquintin/HEPTHwebsite.html)
 
 ## Outreach
