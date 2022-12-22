@@ -14,9 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Jerome Quintin
-email: jquintin@fields.utoronto.ca
+email: jquintin@uwaterloo.ca
 description: >- # this means to ignore newlines until "baseurl:"
-  Postdoctoral Researcher in Theoretical Cosmology affiliated with the University of Toronto and the University of Waterloo
+  Postdoctoral Researcher in Theoretical Cosmology affiliated with the University of Waterloo and the Perimeter Institute
   #twitter_username: username
 github_username: jerome-quintin
 minimal_mistakes_skin: air
@@ -65,9 +65,9 @@ plugins:
 author:
   name   : "Jerome Quintin"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Postdoctoral Researcher in Theoretical Cosmology affiliated with the University of Toronto and the University of Waterloo"
+  bio    : "Postdoctoral Researcher in Theoretical Cosmology affiliated with the University of Waterloo and the Perimeter Institute"
   #location         : "Ontario, Canada"
-  email            : "jquintin@fields.utoronto.ca"
+  email            : "jquintin@uwaterloo.ca"
   #github           : "jerome-quintin"
   #arxiv            : "quintin_j_1"
   #orcid            : "0000-0003-4532-7026"
