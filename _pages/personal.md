@@ -99,10 +99,6 @@ Physical activity plays an important role in my life, whether to stay healthy (p
 
 I play the violin and the drums, though not as much as I'd like to these days. However, I always listen to something while working. I've always liked classical music. My interest generally decreases in reversed chronological order, i.e., from contemporary to baroque, but I have many crushes from the modern and romantic periods. Besides, I like many genres of electronic music, often when it's instrumental and well orchestrated. Finally, my passion for the drums comes from rock and jazz.
 
-{% include gallery class="full" caption="Here are some pictures in various contexts." %}
-
----
-
 Let me end by mentioning that I quite like coffee. I was inspired by another physicist, who gave ratings to various coffee shops and put that on his website. I will take the liberty of writing a top 3 of my own of the best coffee shops in the different cities/neighbourhoods I have had the chance to live in for a proper amount of time (thus having a more global appreciation of the coffee scene within that area):
 
 **Sherbrooke**
@@ -137,3 +133,7 @@ Let me end by mentioning that I quite like coffee. I was inspired by another phy
 
 **Kitchener/Waterloo**
 upcoming...
+
+### Pictures
+
+{% include gallery class="full" caption="Here are some pictures in various contexts." %}
