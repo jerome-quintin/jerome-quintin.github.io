@@ -101,4 +101,37 @@ I play the violin and the drums, though not as much as I'd like to these days. H
 
 {% include gallery class="full" caption="Here are some pictures in various contexts." %}
 
-Let me end by mentioning that I quite like coffee. I was inspired by another physicist, who gave ratings to various coffee shops and put that on his website. I will take the liberty of writing a top-3 of my own of the best coffee shops in the different cities/neighbourhoods I have had the chance to live in for a proper amount of time (thus having a more global appreciation of the coffee scene).
+Let me end by mentioning that I quite like coffee. I was inspired by another physicist, who gave ratings to various coffee shops and put that on his website. I will take the liberty of writing a top 3 of my own of the best coffee shops in the different cities/neighbourhoods I have had the chance to live in for a proper amount of time (thus having a more global appreciation of the coffee scene within that area):
+
+**Sherbrooke**
+1. Café Hubert St-Jean
+2. Kaapeh Espresso
+3. Brûlerie Faro
+
+**Montréal (principalement sur le Plateau et au centre-ville)**
+1. Dispatch Coffee (probably my second favourite ever!)
+2. Pikolo Espresso Bar
+3. Café Myriade
+
+**Rive-Sud de Montréal**
+1. N Latté (Longueuil)
+2. Café Pistache (St-Lambert)
+3. Saint Laurent Café (Boucherville)
+
+**Berlin (all neighbourhoods)**
+1. Five Elephant (Kreuzberg) -- probably my favourite ever!
+2. The Barn (Mitte)
+3. Bonanza Coffee (Prenzlauer Berg)
+
+**Berlin (only within Charlottenburg)**
+1. Giro Coffee Bar
+2. Reeham Coffee
+3. Impala Coffee
+
+**Toronto (somewhat restricted to a very narrow geographical area)**
+1. The Library Specialty Coffee
+2. Carbonic Coffee
+3. Thor Espresso Bar Queen West
+
+**Kitchener/Waterloo**
+upcoming...
