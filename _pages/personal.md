@@ -140,5 +140,5 @@ Let me end by mentioning that I quite like coffee. I was inspired by another phy
 2. Carbonic Coffee
 3. Thor Espresso Bar Queen West
 
-**Kitchener/Waterloo**
+**Kitchener/Waterloo**  
 upcoming...
