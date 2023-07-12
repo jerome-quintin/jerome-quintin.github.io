@@ -2,6 +2,10 @@
 permalink: /personal/
 title: "Personal"
 gallery:
+  - url: /assets/images/gallery/Lac-Brome.jpg
+    image_path: /assets/images/gallery/Lac-Brome.jpg
+    alt: "Lac-Brome, QC, 2023"
+    title: "Lac-Brome, QC, 2023"
   - url: /assets/images/gallery/20201231_092247.jpg
     image_path: /assets/images/gallery/20201231_092247.jpg
     alt: "Mont-Tremblant, QC, 2021"
@@ -76,7 +80,7 @@ gallery:
     title: "Mont Orford, QC, 2009"
 ---
 
-Here are some of the things I do to keep a balanced life. Some of the things I like include sports, music, traveling, reading, and spending time with family and friends.
+Here are some of the things I do to keep a balanced life, including sports, music, traveling, reading, and spending time with family and friends.
 
 Physical activity plays an important role in my life, whether to stay healthy (physically and mentally) or just for fun. This goes hand in hand with the fact that I'm an outdoor lover. I'm especially a winter lover (["Mon pays, ce n'est pas un pays, c'est l'hiver"](https://www.thecanadianencyclopedia.ca/en/article/mon-pays)). I practice alpine skiing, telemark skiing, ski mountaineering, cross-country skiing, ice hockey, speed skating, figure skating, snowshoeing, road and trail running, road cycling, cross-country mountain biking, hiking, soccer, and tennis.
 
@@ -135,7 +139,7 @@ Let me end by mentioning that I quite like coffee. I was inspired by another phy
 2. Reeham Coffee
 3. Impala Coffee
 
-**Toronto (somewhat restricted to a very narrow geographical area)**
+**Toronto (somewhat restricted to a very narrow geographical area near UofT)**
 1. The Library Specialty Coffee
 2. Carbonic Coffee
 3. Thor Espresso Bar Queen West
