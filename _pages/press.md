@@ -22,7 +22,7 @@ title: "Community, Outreach and Press"
 
 ## Press
 
-- [Article by the Max Planck Institute for Gravitational Physics (Albert Einstein Institute)](https://www.aei.mpg.de/1077266/how-large-is-our-universe?c=26149) about [my paper suggesting our universe may be "small"](https://arxiv.org/abs/2309.03272)
+- [Article by the Max Planck Institute for Gravitational Physics (Albert Einstein Institute) Press Office](https://www.aei.mpg.de/1077266/how-large-is-our-universe?c=26149) about [my paper suggesting our universe may be "small"](https://arxiv.org/abs/2309.03272)
 - [Article on Universe Today](https://www.universetoday.com/163112/the-case-for-a-small-universe/#more-163112) about [my paper suggesting our universe may be "small"](https://arxiv.org/abs/2309.03272)
 - [Article on Phys.org](https://phys.org/news/2023-09-case-small-universe.html) about [my paper suggesting our universe may be "small"](https://arxiv.org/abs/2309.03272)
 - [Article written by Bernard Carr for the New Scientist](https://www.newscientist.com/article/mg25734320-300-the-hunt-for-black-holes-older-than-the-universe-itself/), which discusses the possibility of primordial black holes from "before the big bang", mentioning my [work on the subject](https://arxiv.org/abs/1609.02556)
