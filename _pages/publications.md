@@ -10,6 +10,7 @@ You can get a list of publications here:
 <i class="ai ai-orcid ai-3x"></i> [ORCiD](https://orcid.org/0000-0003-4532-7026)
 
 Or here:  
+- J.-L. Lehners and **J. Quintin**, *A small Universe*, [\[arXiv:2309.03272 \[hep-th\]\]](https://arxiv.org/abs/2309.03272) [\[inSPIRE\]](https://inspirehep.net/literature/2694403) [\[ADS\]](https://ui.adsabs.harvard.edu/abs/2023arXiv230903272L/abstract)
 - G. Geshnizjani, E. Ling and **J. Quintin**, *On the initial singularity and extendibility of flat quasi-de Sitter spacetimes*, [\[arXiv:2305.01676 \[gr-qc\]\]](https://arxiv.org/abs/2305.01676) [\[inSPIRE\]](https://inspirehep.net/literature/2656220) [\[ADS\]](https://ui.adsabs.harvard.edu/abs/2023arXiv230501676G/abstract)
 - C. Jonas, J.-L. Lehners and **J. Quintin**, *Uses of complex metrics in cosmology*, [JHEP 08, 284 (2022)](https://link.springer.com/article/10.1007/JHEP08(2022)284) [\[arXiv:2205.15332 \[hep-th\]\]](https://arxiv.org/abs/2205.15332) [\[inSPIRE\]](https://inspirehep.net/literature/2089852) [\[ADS\]](https://ui.adsabs.harvard.edu/abs/2022JHEP...08..284J/abstract)
 - C. Ganguly and **J. Quintin**, *Microphysical manifestations of viscosity and consequences for anisotropies in the very early universe*, [Phys. Rev. D 105, no. 2, 023532 (2022)](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.105.023532) [\[arXiv:2109.11701 \[gr-qc\]\]](https://arxiv.org/abs/2109.11701) [\[inSPIRE\]](https://inspirehep.net/literature/1927775) [\[ADS\]](https://ui.adsabs.harvard.edu/abs/2022PhRvD.105b3532G/abstract)

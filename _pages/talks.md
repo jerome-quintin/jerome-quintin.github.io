@@ -6,6 +6,7 @@ title: "Talks"
 I generally prefer giving blackboard talks, but sometimes slides are simply better suited. Here is a list of selected talks and slides (in pseudorandom order...).
 
 - Blackboard talk given in March 2023 for a Cosmology Group Meeting at the Perimeter Institute presenting work to appear on past singularities and extensions in inflation (the work in question is now online; see [arXiv:2305.01676](https://arxiv.org/abs/2305.01676)): [video](https://pirsa.org/23030102){: .btn .btn--info}
+I also presented this topic as part of the [Copernicus Webinar and Colloquium Series](https://indico.cern.ch/event/936284/contributions/5319858/) on 18/07/2023: [slides](../assets/docs/Quintin_slides_Copernicus_July2023.pdf){: .btn .btn--info}
 
 - Online talk given during the [Canadian Association of Physicists Congress](https://www.cap.ca/congress-conference/past-congress/2021-cap-virtual-congress-june-6-11/invited-speakers/) on 08/06/2021 mainly presenting [arXiv:2012.04911](https://arxiv.org/abs/2012.04911), [arXiv:2102.05550](https://arxiv.org/abs/2102.05550), and work to appear: [slides](../assets/docs/slides_CAP_Quintin.pdf){: .btn .btn--info}  
 I gave a longer version of this talk also at [McGill on 01/12/2021](https://www.physics.mcgill.ca/thep-talks/old_websites/HEPTHwebsite_fall21.html) and at [Perimeter on 30/11/2021](https://perimeterinstitute.ca/events/discriminating-between-theories-very-early-universe): [slides](../assets/docs/Quintin_slides_Perimeter.pdf){: .btn .btn--info} and [video](https://pirsa.org/21110043){: .btn .btn--info}
