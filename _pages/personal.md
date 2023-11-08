@@ -116,8 +116,8 @@ Let me end by mentioning that I quite like coffee. I was inspired by another phy
 
 **Sherbrooke**
 1. Café Hubert St-Jean
-2. Kaapeh Espresso
-3. Brûlerie Faro
+2. Géogène Micro-torrefacteur
+3. Kaapeh Espresso
 
 **Montréal (principalement sur le Plateau et au centre-ville)**
 1. Dispatch Coffee (probably my second favourite ever!)

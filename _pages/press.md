@@ -10,6 +10,8 @@ title: "Community, Outreach and Press"
 
 ## Outreach
 
+- Talk for the [Club mathématique de l'Université de Sherbrooke](https://www.usherbrooke.ca/mathematiques/les-mathematiques/club-mathematique) entitled "Les mathématiques du Big Bang (The mathematics of the Big Bang)", Sherbrooke, 12/10/2023
+
 - Interviewed for a documentary by Phil Halper released on YouTube (see below), which discusses [my paper on extensions before inflation](https://arxiv.org/abs/2305.01676).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ol7IWdtCS2Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
