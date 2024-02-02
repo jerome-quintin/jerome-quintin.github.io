@@ -5,10 +5,13 @@ title: "Community, Outreach and Press"
 
 ## Community
 
+- We are currently organizing the conference [50 Years of Horndeski Gravity: Exploring Modified Gravity](https://events.perimeterinstitute.ca/event/66/) to be held at the Perimeter Institute and University of Waterloo the week of July 15, 2024
 - In 2020 I organized a [Winter School on Theoretical Cosmology at Nordita](https://www.nordita.org/events/list/index.php?eventlist_select=s&eventlist_displayinfo=m&eventlist_period=f)
 - At McGill I was the [hep-th journal club organizer](http://www.physics.mcgill.ca/~jquintin/HEPTHwebsite.html)
 
 ## Outreach
+
+- Talk for Cégep students at Marianopolis College, "Unveiling the Big Bang", Montréal, 23/01/2024
 
 - Talk for the [Club mathématique de l'Université de Sherbrooke](https://www.usherbrooke.ca/mathematiques/les-mathematiques/club-mathematique) entitled "Les mathématiques du Big Bang (The mathematics of the Big Bang)", Sherbrooke, 12/10/2023
 
