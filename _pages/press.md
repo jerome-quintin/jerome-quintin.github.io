@@ -11,6 +11,10 @@ title: "Community, Outreach and Press"
 
 ## Outreach
 
+- Interviewed by [NiklasOPF](https://niklasopf.github.io/) on YouTube (see below), which discusses [my paper on extensions before inflation](https://arxiv.org/abs/2305.01676).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-qYlsOd2frU?si=tLUja9NcGYy37Jwz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 - Talk for Cégep students at Marianopolis College, "Unveiling the Big Bang", Montréal, 23/01/2024
 
 - Talk for the [Club mathématique de l'Université de Sherbrooke](https://www.usherbrooke.ca/mathematiques/les-mathematiques/club-mathematique) entitled "Les mathématiques du Big Bang (The mathematics of the Big Bang)", Sherbrooke, 12/10/2023
