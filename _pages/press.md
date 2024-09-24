@@ -5,7 +5,7 @@ title: "Community, Outreach and Press"
 
 ## Community
 
-- We are currently organizing the conference [50 Years of Horndeski Gravity: Exploring Modified Gravity](https://events.perimeterinstitute.ca/event/66/) to be held at the Perimeter Institute and University of Waterloo the week of July 15, 2024
+- I was one of the organizers of the conference [50 Years of Horndeski Gravity: Exploring Modified Gravity](https://events.perimeterinstitute.ca/event/66/) held at the Perimeter Institute and University of Waterloo the week of July 15, 2024
 - In 2020 I organized a [Winter School on Theoretical Cosmology at Nordita](https://indico.fysik.su.se/event/6662/overview)
 - At McGill I was the [hep-th journal club organizer](http://www.physics.mcgill.ca/~jquintin/HEPTHwebsite.html)
 
@@ -23,6 +23,10 @@ title: "Community, Outreach and Press"
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ol7IWdtCS2Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+Some of the clips were reused in this video:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/foq4nVAwEao?si=6RPzJm-SqJri3KJ9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 - Public talk as part of the [Astronomy on Tap](https://msi.mcgill.ca/index.php?page=astro-on-tap) event ("Astronomie en fût" in French) entitled "L'univers a-t-il eu un commencement? (Did the universe have a beginning?)", Pub L'Île Noire, Montréal, 25/04/2017
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Finally Jérôme Quintin from <a href="https://twitter.com/mcgillu?ref_src=twsrc%5Etfw">@mcgillu</a> who will explain how the Universe began. <a href="https://twitter.com/hashtag/AstroMcGill?src=hash&amp;ref_src=twsrc%5Etfw">#AstroMcGill</a> <a href="https://twitter.com/hashtag/AstroEnFut?src=hash&amp;ref_src=twsrc%5Etfw">#AstroEnFut</a> <a href="https://t.co/Be0jiZv3cT">pic.twitter.com/Be0jiZv3cT</a></p>&mdash; AstroMcGill (@AstroMcGill) <a href="https://twitter.com/AstroMcGill/status/857063726645751809?ref_src=twsrc%5Etfw">April 26, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -32,6 +36,7 @@ title: "Community, Outreach and Press"
 ## Press
 
 - [Article by Quanta Magazine](https://www.quantamagazine.org/mathematicians-attempt-to-glimpse-past-the-big-bang-20240531/) about [my paper on extensions before inflation](https://arxiv.org/abs/2305.01676)
+- [UWaterloo Applied Math highlighted](https://uwaterloo.ca/applied-mathematics/news/applied-math-research-featured-quanta-magazine) the above Quanta article
 - [Article by the Max Planck Institute for Gravitational Physics (Albert Einstein Institute) Press Office](https://www.aei.mpg.de/1077266/how-large-is-our-universe?c=26149) about [my paper suggesting our universe may be "small"](https://arxiv.org/abs/2309.03272)
 - [Article on Universe Today](https://www.universetoday.com/163112/the-case-for-a-small-universe/#more-163112) about [my paper suggesting our universe may be "small"](https://arxiv.org/abs/2309.03272)
 - [Article on Phys.org](https://phys.org/news/2023-09-case-small-universe.html) about [my paper suggesting our universe may be "small"](https://arxiv.org/abs/2309.03272)
