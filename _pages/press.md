@@ -35,6 +35,10 @@ Some of the clips were reused in this video:
 
 ## Press
 
+- Video by PBS Space Time (below), which discusses [my paper on extensions before inflation](https://arxiv.org/abs/2305.01676)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HRqBGnSxzyI?si=qmgQERDDmaztR6bV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 - [Article by Quanta Magazine](https://www.quantamagazine.org/mathematicians-attempt-to-glimpse-past-the-big-bang-20240531/) about [my paper on extensions before inflation](https://arxiv.org/abs/2305.01676)
 - [UWaterloo Applied Math highlighted](https://uwaterloo.ca/applied-mathematics/news/applied-math-research-featured-quanta-magazine) the above Quanta article
 - [Article by the Max Planck Institute for Gravitational Physics (Albert Einstein Institute) Press Office](https://www.aei.mpg.de/1077266/how-large-is-our-universe?c=26149) about [my paper suggesting our universe may be "small"](https://arxiv.org/abs/2309.03272)
