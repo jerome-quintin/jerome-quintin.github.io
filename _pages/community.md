@@ -1,5 +1,5 @@
 ---
-permalink: /press/
+permalink: /community/
 title: "Community, Outreach and Press"
 ---
 
