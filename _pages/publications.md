@@ -4,15 +4,15 @@ title: "Publications"
 ---
 
 You can get a list of publications here:  
-<i class="ai ai-google-scholar ai-3x"></i> [Google Scholar](https://scholar.google.ca/citations?hl=en&user=pE2MrRwAAAAJ)
+<i class="ai ai-google-scholar ai-3x"></i> [Google Scholar](https://scholar.google.ca/citations?hl=en&user=pE2MrRwAAAAJ)  
 <i class="ai ai-inspire ai-3x"></i> [iNSPIRE-HEP](https://inspirehep.net/authors/1344967?ui-citation-summary=true)  
 <i class="ai ai-arxiv ai-3x"></i> [arXiv](http://arxiv.org/a/quintin_j_1)  
 <i class="ai ai-ads ai-3x"></i> [SAO/NASA ads](https://ui.adsabs.harvard.edu/search/p_=0&q=docs%28library%2FCJaTKNPHThyCaiEhjcmugQ%29&sort=date%20desc%2C%20bibcode%20desc)  
-<i class="ai ai-orcid ai-3x"></i> [ORCiD](https://orcid.org/0000-0003-4532-7026)
-<i class="ai ai-clarivate ai-3x"></i> [Web of Science](https://www.webofscience.com/wos/author/record/244633)
-<i class="ai ai-researchgate ai-3x"></i>[ResearchGate](https://www.researchgate.net/profile/Jerome-Quintin-3)
-<i class="ai ai-scopus ai-3x"></i> [Scopus](https://www.scopus.com/authid/detail.uri?authorId=56297729200)
-<i></i> [Frontiers](https://loop.frontiersin.org/people/2192129/overview)
+<i class="ai ai-orcid ai-3x"></i> [ORCiD](https://orcid.org/0000-0003-4532-7026)  
+<i class="ai ai-clarivate ai-3x"></i> [Web of Science](https://www.webofscience.com/wos/author/record/244633)  
+<i class="ai ai-researchgate ai-3x"></i>[ResearchGate](https://www.researchgate.net/profile/Jerome-Quintin-3)  
+<i class="ai ai-scopus ai-3x"></i> [Scopus](https://www.scopus.com/authid/detail.uri?authorId=56297729200)  
+<i></i> [Frontiers](https://loop.frontiersin.org/people/2192129/overview)  
 <i class="ai ai-academia ai-3x"></i> [Academia](https://majapasovic.academia.edu/JeromeQuintin)
 
 Or here:  
