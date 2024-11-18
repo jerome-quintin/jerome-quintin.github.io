@@ -5,6 +5,11 @@ title: "Talks"
 
 I generally prefer giving blackboard talks, but sometimes slides are simply better suited. Here is a list of selected talks and slides (in pseudorandom order...).
 
+- Online talk for the Majorana-Raychaudhuri Seminar Series presenting [my paper on fingerprints of a non-inflationary universe from massive fields](https://arxiv.org/abs/2405.11016): [slides](../assets/docs/Jerome-Quintin-slides-Majorana-Raychaudhuri.pdf){: .btn .btn--info}  
+See also the presentation on YouTube below.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Itwur7slfNQ?si=CKzpU-PakzYeOKJm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 - Blackboard talk given in March 2023 for a Cosmology Group Meeting at the Perimeter Institute presenting work to appear on past singularities and extensions in inflation (the work in question is now online; see [arXiv:2305.01676](https://arxiv.org/abs/2305.01676)): [video](https://pirsa.org/23030102){: .btn .btn--info}  
 I also presented this topic as part of the [Copernicus Webinar and Colloquium Series](https://indico.cern.ch/event/936284/contributions/5319858/) in July 2023: [slides](https://indico.cern.ch/event/936284/contributions/5319858/attachments/2686957/4662015/Quintin_slides_Copernicus_July2023.pdf){: .btn .btn--info}
 
