@@ -16,6 +16,7 @@ You can get a list of publications here:
 <i class="ai ai-academia ai-3x"></i> [Academia](https://majapasovic.academia.edu/JeromeQuintin)
 
 Or here:  
+- R. Liu, **J. Quintin** and N. Afshordi, *Complex powerballs: conformal cores of quantum black holes in quadratic gravity*, [\[arXiv:2411.19311 \[hep-th\]\]](https://arxiv.org/abs/2411.19311) [\[inSPIRE\]](https://inspirehep.net/literature/2854125) [\[ADS\]](https://ui.adsabs.harvard.edu/abs/2024arXiv241119311L/abstract)
 - **J. Quintin**, X. Chen and R. Ebadi, *Fingerprints of a non-inflationary universe from massive fields*, [JCAP 09, 026 (2024)](https://iopscience.iop.org/article/10.1088/1475-7516/2024/09/026) [\[arXiv:2405.11016 \[astro-ph.CO\]\]](https://arxiv.org/abs/2405.11016) [\[inSPIRE\]](https://inspirehep.net/literature/2788230) [\[ADS\]](https://ui.adsabs.harvard.edu/abs/2024arXiv240511016Q/abstract)
 - J.-L. Lehners and **J. Quintin**, *Delicate curvature bounces in the no-boundary wave function and in the late universe*, [\[arXiv:2403.15205 \[gr-qc\]\]](https://arxiv.org/abs/2403.15205) [\[inSPIRE\]](https://inspirehep.net/literature/2771161) [\[ADS\]](https://ui.adsabs.harvard.edu/abs/2024arXiv240315205L/abstract)
 - J.-L. Lehners and **J. Quintin**, *A small Universe*, [Phys. Lett. B 850 (2024) 138488](https://www.sciencedirect.com/science/article/pii/S0370269324000467) [\[arXiv:2309.03272 \[hep-th\]\]](https://arxiv.org/abs/2309.03272) [\[inSPIRE\]](https://inspirehep.net/literature/2694403) [\[ADS\]](https://ui.adsabs.harvard.edu/abs/2023arXiv230903272L/abstract)
