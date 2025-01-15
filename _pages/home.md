@@ -15,7 +15,7 @@ feature_row:
     url: "/about/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/Adeltasvareps.png
+  - image_path: /assets/images/PSC.png
     alt: "research"
     title: "Research"
     excerpt: "Learn more about my research."
