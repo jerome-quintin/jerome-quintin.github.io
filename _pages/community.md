@@ -41,6 +41,7 @@ Some of the clips were reused in this video:
 
 - [Article by Quanta Magazine](https://www.quantamagazine.org/mathematicians-attempt-to-glimpse-past-the-big-bang-20240531/) about [my paper on extensions before inflation](https://arxiv.org/abs/2305.01676)
 - [UWaterloo Applied Math highlighted](https://uwaterloo.ca/applied-mathematics/news/applied-math-research-featured-quanta-magazine) the above Quanta article
+- [Article by written by Leah Crane for the New Scientist](https://www.newscientist.com/article/mg26234970-500-how-big-is-the-universe-the-shape-of-space-time-could-tell-us/) about [my paper suggesting our universe may be "small"](https://arxiv.org/abs/2309.03272)
 - [Article by the Max Planck Institute for Gravitational Physics (Albert Einstein Institute) Press Office](https://www.aei.mpg.de/1077266/how-large-is-our-universe?c=26149) about [my paper suggesting our universe may be "small"](https://arxiv.org/abs/2309.03272)
 - [Article on Universe Today](https://www.universetoday.com/163112/the-case-for-a-small-universe/#more-163112) about [my paper suggesting our universe may be "small"](https://arxiv.org/abs/2309.03272)
 - [Article on Phys.org](https://phys.org/news/2023-09-case-small-universe.html) about [my paper suggesting our universe may be "small"](https://arxiv.org/abs/2309.03272)
