@@ -10,6 +10,8 @@ See also the presentation on YouTube below.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Itwur7slfNQ?si=CKzpU-PakzYeOKJm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+- Seminar given as part of the [Brown Brown Theoretical Physics Center IDEA Seminar Series](https://events.brown.edu/physics/event/310442-the-brown-theoretical-physics-center-idea-seminar) on 23/04/2025 about my different papers on quantum cosmology and complex metrics: [slides](../assets/docs/Quintin_slides_Brown.pdf){: .btn .btn--info}
+
 - Blackboard talk given in March 2023 for a Cosmology Group Meeting at the Perimeter Institute presenting work to appear on past singularities and extensions in inflation (the work in question is now online; see [arXiv:2305.01676](https://arxiv.org/abs/2305.01676)): [video](https://pirsa.org/23030102){: .btn .btn--info}  
 I also presented this topic as part of the [Copernicus Webinar and Colloquium Series](https://indico.cern.ch/event/936284/contributions/5319858/) in July 2023: [slides](https://indico.cern.ch/event/936284/contributions/5319858/attachments/2686957/4662015/Quintin_slides_Copernicus_July2023.pdf){: .btn .btn--info}
 
