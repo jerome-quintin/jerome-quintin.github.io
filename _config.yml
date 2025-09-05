@@ -16,7 +16,7 @@
 title: Jerome Quintin
 email: jquintin@uwaterloo.ca
 description: >- # this means to ignore newlines until "baseurl:"
-  Postdoctoral Researcher in Theoretical Cosmology affiliated with the University of Waterloo and the Perimeter Institute
+  Theoretical Cosmologist
   #twitter_username: username
 github_username: jerome-quintin
 minimal_mistakes_skin: air
@@ -77,9 +77,9 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://jerome-quintin.github.io"
-    - label: "PI Webpage"
-      icon: "fas fa-fw fa-link"
-      url: "https://perimeterinstitute.ca/people/jerome-quintin"
+    #- label: "PI Webpage"
+    #  icon: "fas fa-fw fa-link"
+    #  url: "https://perimeterinstitute.ca/people/jerome-quintin"
     - label: "Google Scholar"
       icon: "ai ai-google-scholar-square ai-3x"
       url: "https://scholar.google.ca/citations?hl=en&user=pE2MrRwAAAAJ"
