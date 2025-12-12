@@ -11,6 +11,10 @@ title: "Community, Outreach and Press"
 
 ## Outreach
 
+- Interviewed by [Phil Halper](https://press.uchicago.edu/ucp/books/author/H/P/au131137314.html) on YouTube (see below), which discusses [my paper on inflation in quantum quadratic gravity](https://arxiv.org/abs/2510.18733).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TZeLGt4AOAs?si=kUs8uvd0x8hauNaj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 - Interviewed by [NiklasOPF](https://niklasopf.github.io/) on YouTube (see below), which discusses [my paper on extensions before inflation](https://arxiv.org/abs/2305.01676).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-qYlsOd2frU?si=tLUja9NcGYy37Jwz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -19,7 +23,7 @@ title: "Community, Outreach and Press"
 
 - Talk for the [Club mathématique de l'Université de Sherbrooke](https://www.usherbrooke.ca/mathematiques/les-mathematiques/club-mathematique) entitled "Les mathématiques du Big Bang (The mathematics of the Big Bang)", Sherbrooke, 12/10/2023
 
-- Interviewed for a documentary by Phil Halper released on YouTube (see below), which discusses [my paper on extensions before inflation](https://arxiv.org/abs/2305.01676).
+- Interviewed for a documentary by [Phil Halper](https://press.uchicago.edu/ucp/books/author/H/P/au131137314.html) released on YouTube (see below), which discusses [my paper on extensions before inflation](https://arxiv.org/abs/2305.01676).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ol7IWdtCS2Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

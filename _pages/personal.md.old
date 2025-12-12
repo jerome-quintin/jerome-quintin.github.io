@@ -10,6 +10,10 @@ gallery:
     image_path: /assets/images/gallery/20201231_092247.jpg
     alt: "Mont-Tremblant, QC, 2021"
     title: "Mont-Tremblant, QC, 2021"
+  - url: /assets/images/gallery/IMG_0521.jpg
+    image_path: /assets/images/gallery/IMG_0521.jpg
+    alt: "Mont-Tremblant, QC, 2020"
+    title: "Mont-Tremblant, QC, 2020"
   - url: /assets/images/gallery/courseMontreal.jpg
     image_path: /assets/images/gallery/courseMontreal.jpg
     alt: "Montréal, QC, 2019"
