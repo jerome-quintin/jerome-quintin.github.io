@@ -148,7 +148,7 @@
             let px = map(x, -size, size, 0, width);
             let py = map(y, -size, size, height, 0);
             fill(0);
-            ellipse(px, py, 10, 10);
+            ellipse(px, py, 10, 10);  // Draw the test charge
             fill(255);
             textSize(12);
             textAlign(CENTER, CENTER);
@@ -198,24 +198,35 @@
 
         function mouseDragged() {
             if (dragging) {
+                // Ensure the full circle stays within the canvas by clamping the x and y coordinates
                 x = map(constrain(mouseX, 5, width - 5), 0, width, -size, size);
                 y = map(constrain(mouseY, 5, height - 5), 0, height, size, -size);
             }
         }
 
+        // Handle touch events for mobile screens
         function touchStarted() {
-            mousePressed();
-            return false;
+            let px = map(x, -size, size, 0, width);
+            let py = map(y, -size, size, height, 0);
+            let d = dist(touchX, touchY, px, py);
+            if (d < 10) {
+                dragging = true;
+            }
+            return false;  // Prevent page scrolling
         }
 
         function touchEnded() {
-            mouseReleased();
+            dragging = false;
             return false;
         }
 
         function touchMoved() {
-            mouseDragged();
-            return false;
+            if (dragging) {
+                // Adjust the touch coordinates for dragging the test charge
+                x = map(constrain(touchX, 5, width - 5), 0, width, -size, size);
+                y = map(constrain(touchY, 5, height - 5), 0, height, size, -size);
+            }
+            return false;  // Prevent page scrolling
         }
     </script>
 </body>
