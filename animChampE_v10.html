@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Champ électrique d'une charge ponctuelle</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <style>
@@ -60,7 +60,6 @@
 </head>
 <body>
     <h2>Champ électrique d'une charge ponctuelle et son effet sur une charge test</h2>
-
     <h4>Une charge est placée au centre de l'espace ci-dessous. Cette charge peut être positive ou négative.</h4>
 
     <div style="display: flex; justify-content: center; margin-top: 20px;">
@@ -125,6 +124,41 @@
             });
 
             updateLabels();
+
+            // Touch events
+            canvas.elt.addEventListener("touchstart", (e) => {
+                const { x: touchX, y: touchY } = getMousePosition(e.touches[0]);
+                let px = map(x, -size, size, 0, width);
+                let py = map(y, -size, size, height, 0);
+                let dist = Math.sqrt((touchX - px) ** 2 + (touchY - py) ** 2);
+                
+                if (dist < 10) {
+                    dragging = true;
+                }
+                
+                e.preventDefault();
+            });
+
+            canvas.elt.addEventListener("touchmove", (e) => {
+                if (!dragging) return;
+
+                const { x: touchX, y: touchY } = getMousePosition(e.touches[0]);
+                x = map(constrain(touchX, 5, width - 5), 0, width, -size, size);
+                y = map(constrain(touchY, 5, height - 5), 0, height, size, -size);
+                
+                draw();
+                e.preventDefault();
+            });
+
+            canvas.elt.addEventListener("touchend", () => dragging = false);
+            canvas.elt.addEventListener("touchcancel", () => dragging = false);
+        }
+
+        function getMousePosition(touch) {
+            const rect = canvas.elt.getBoundingClientRect();
+            const x = touch.clientX - rect.left;
+            const y = touch.clientY - rect.top;
+            return { x, y };
         }
 
         function updateLabels() {
@@ -142,22 +176,22 @@
                 let uy = map(v.vy, -1, 1, -10, 10);
 
                 let col = color(map(v.magnitude, 0, 1, 255, 0), map(v.magnitude, 0, 1, 0, 255), 255);
-                drawArrow(px, py, (originChargePositive ? 1 : -1)*ux, (originChargePositive ? 1 : -1)*uy, col);
+                drawArrow(px, py, (originChargePositive ? 1 : -1) * ux, (originChargePositive ? 1 : -1) * uy, col);
             }
 
             let px = map(x, -size, size, 0, width);
             let py = map(y, -size, size, height, 0);
             fill(0);
-            ellipse(px, py, 10, 10);  // Draw the test charge
+            ellipse(px, py, 10, 10);
             fill(255);
             textSize(12);
             textAlign(CENTER, CENTER);
             text((pointChargePositive ? "+" : "-"), px, py);
 
             let r = sqrt(x * x + y * y);
-            let ux = map(x/(r*r*r), -1, 1, -10, 10);
-            let uy = map(-y/(r*r*r), -1, 1, -10, 10);
-            drawArrow(px, py, (pointChargePositive ? 1 : -1)*(originChargePositive ? 1 : -1)*ux, (pointChargePositive ? 1 : -1)*(originChargePositive ? 1 : -1)*uy, 0);
+            let ux = map(x / (r * r * r), -1, 1, -10, 10);
+            let uy = map(-y / (r * r * r), -1, 1, -10, 10);
+            drawArrow(px, py, (pointChargePositive ? 1 : -1) * (originChargePositive ? 1 : -1) * ux, (pointChargePositive ? 1 : -1) * (originChargePositive ? 1 : -1) * uy, 0);
 
             fill(0);
             let centralX = map(0, -size, size, 0, width);
@@ -183,6 +217,7 @@
             pop();
         }
 
+        // Mouse events for dragging
         function mousePressed() {
             let px = map(x, -size, size, 0, width);
             let py = map(y, -size, size, height, 0);
@@ -198,46 +233,10 @@
 
         function mouseDragged() {
             if (dragging) {
-                // Ensure the full circle stays within the canvas by clamping the x and y coordinates
                 x = map(constrain(mouseX, 5, width - 5), 0, width, -size, size);
                 y = map(constrain(mouseY, 5, height - 5), 0, height, size, -size);
             }
         }
-
-        // Handle touch events
-        function touchStarted() {
-            let px = map(x, -size, size, 0, width);
-            let py = map(y, -size, size, height, 0);
-            let d = dist(touchX, touchY, px, py);
-            if (d < 10) {
-                dragging = true;
-            }
-        }
-
-        function touchMoved() {
-            if (dragging) {
-                // Update the test charge's position based on touch movement
-                x = map(constrain(touchX, 5, width - 5), 0, width, -size, size);
-                y = map(constrain(touchY, 5, height - 5), 0, height, size, -size);
-            }
-        }
-
-        function touchEnded() {
-            dragging = false;
-        }
-
-        // Attach touch and mouse event listeners
-        function setupEvents() {
-            canvas.mousePressed(mousePressed);
-            canvas.mouseReleased(mouseReleased);
-            canvas.mouseDragged(mouseDragged);
-
-            canvas.touchStarted(touchStarted);
-            canvas.touchMoved(touchMoved);
-            canvas.touchEnded(touchEnded);
-        }
-
-        setupEvents();
     </script>
 </body>
 </html>
