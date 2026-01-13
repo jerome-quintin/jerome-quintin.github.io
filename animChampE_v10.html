@@ -126,10 +126,10 @@
             updateLabels();
 
             // Touch events
-            canvas.elt.addEventListener("touchstart", handleTouchStart, false);
-            canvas.elt.addEventListener("touchmove", handleTouchMove, false);
-            canvas.elt.addEventListener("touchend", handleTouchEnd, false);
-            canvas.elt.addEventListener("touchcancel", handleTouchEnd, false);
+            canvas.elt.addEventListener("touchstart", handleTouchStart, {passive: false});
+            canvas.elt.addEventListener("touchmove", handleTouchMove, {passive: false});
+            canvas.elt.addEventListener("touchend", handleTouchEnd, {passive: false});
+            canvas.elt.addEventListener("touchcancel", handleTouchEnd, {passive: false});
         }
 
         function getMousePosition(touch) {
