@@ -126,32 +126,10 @@
             updateLabels();
 
             // Touch events
-            canvas.elt.addEventListener("touchstart", (e) => {
-                const { x: touchX, y: touchY } = getMousePosition(e.touches[0]);
-                let px = map(x, -size, size, 0, width);
-                let py = map(y, -size, size, height, 0);
-                let dist = Math.sqrt((touchX - px) ** 2 + (touchY - py) ** 2);
-                
-                if (dist < 10) {
-                    dragging = true;
-                }
-                
-                e.preventDefault();
-            });
-
-            canvas.elt.addEventListener("touchmove", (e) => {
-                if (!dragging) return;
-
-                const { x: touchX, y: touchY } = getMousePosition(e.touches[0]);
-                x = map(constrain(touchX, 5, width - 5), 0, width, -size, size);
-                y = map(constrain(touchY, 5, height - 5), 0, height, size, -size);
-                
-                draw();
-                e.preventDefault();
-            });
-
-            canvas.elt.addEventListener("touchend", () => dragging = false);
-            canvas.elt.addEventListener("touchcancel", () => dragging = false);
+            canvas.elt.addEventListener("touchstart", handleTouchStart, false);
+            canvas.elt.addEventListener("touchmove", handleTouchMove, false);
+            canvas.elt.addEventListener("touchend", handleTouchEnd, false);
+            canvas.elt.addEventListener("touchcancel", handleTouchEnd, false);
         }
 
         function getMousePosition(touch) {
@@ -159,6 +137,34 @@
             const x = touch.clientX - rect.left;
             const y = touch.clientY - rect.top;
             return { x, y };
+        }
+
+        function handleTouchStart(e) {
+            const { x: touchX, y: touchY } = getMousePosition(e.touches[0]);
+            let px = map(x, -size, size, 0, width);
+            let py = map(y, -size, size, height, 0);
+            let dist = Math.sqrt((touchX - px) ** 2 + (touchY - py) ** 2);
+            
+            if (dist < 10) {
+                dragging = true;
+            }
+            
+            e.preventDefault();  // Prevent page scroll
+        }
+
+        function handleTouchMove(e) {
+            if (!dragging) return;
+
+            const { x: touchX, y: touchY } = getMousePosition(e.touches[0]);
+            x = map(constrain(touchX, 5, width - 5), 0, width, -size, size);
+            y = map(constrain(touchY, 5, height - 5), 0, height, size, -size);
+            
+            draw();
+            e.preventDefault();  // Prevent page scroll
+        }
+
+        function handleTouchEnd(e) {
+            dragging = false;
         }
 
         function updateLabels() {
