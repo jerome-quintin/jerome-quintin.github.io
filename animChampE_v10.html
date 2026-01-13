@@ -125,6 +125,11 @@
 
             updateLabels();
 
+            // Prevent scrolling on the document
+            document.body.addEventListener("touchmove", function(e) {
+                e.preventDefault(); // Prevent scrolling
+            }, { passive: false });
+
             // Touch events
             canvas.elt.addEventListener("touchstart", handleTouchStart, {passive: false});
             canvas.elt.addEventListener("touchmove", handleTouchMove, {passive: false});
