@@ -148,11 +148,12 @@
             let px = map(x, -size, size, 0, width);
             let py = map(y, -size, size, height, 0);
             fill(0);
-            ellipse(px, py, 10, 10);
+            ellipse(px, py, 10, 10);  // Draw the test charge
             fill(255);
             textSize(12);
             textAlign(CENTER, CENTER);
             text((pointChargePositive ? "+" : "-"), px, py);
+
             let r = sqrt(x * x + y * y);
             let ux = map(x/(r*r*r), -1, 1, -10, 10);
             let uy = map(-y/(r*r*r), -1, 1, -10, 10);
@@ -197,8 +198,9 @@
 
         function mouseDragged() {
             if (dragging) {
-                x = map(mouseX, 0, width, -size, size);
-                y = map(mouseY, 0, height, size, -size);
+                // Ensure the full circle stays within the canvas by clamping the x and y coordinates
+                x = map(constrain(mouseX, 5, width - 5), 0, width, -size, size);
+                y = map(constrain(mouseY, 5, height - 5), 0, height, size, -size);
             }
         }
 
@@ -217,8 +219,9 @@
 
         function touchMoved() {
             if (dragging) {
-                x = map(touchX, 0, width, -size, size);
-                y = map(touchY, 0, height, size, -size);
+                // Ensure the full circle stays within the canvas by clamping the x and y coordinates
+                x = map(constrain(touchX, 5, width - 5), 0, width, -size, size);
+                y = map(constrain(touchY, 5, height - 5), 0, height, size, -size);
             }
         }
     </script>
