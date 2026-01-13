@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champ électrique d'une charge ponctuelle</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <style>
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            border-radius: 50%;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+        }
+
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+
+        .toggle-label {
+            margin-left: 10px;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Champ électrique d'une charge ponctuelle et son effet sur une charge test</h2>
+
+    <h4>Une charge est placée au centre de l'espace ci-dessous. Cette charge peut être positive ou négative.</h4>
+
+    <div style="display: flex; justify-content: center; margin-top: 20px;">
+        <label for="originCharge">Charge à l'origine :</label>
+        <label class="switch">
+            <input type="checkbox" id="originCharge" checked>
+            <span class="slider"></span>
+        </label>
+        <span class="toggle-label" id="originLabel">Positive</span>
+    </div>
+
+    <h4>Le champ électrique que cette charge crée autour d'elle est représenté par le champ vectoriel de couleur, où l'intensité du champ va de valeurs plus grandes (en turquoise) proche de la charge à des valeurs plus petites (en mauve) loin de la charge. On peut voir l'effet de ce champ sur une charge test, qui peut être positive ou négative.</h4>
+
+    <div style="display: flex; justify-content: center; margin-top: 20px;">
+        <label for="pointCharge">Charge test :</label>
+        <label class="switch">
+            <input type="checkbox" id="pointCharge" checked>
+            <span class="slider"></span>
+        </label>
+        <span class="toggle-label" id="pointLabel">Positive</span>
+    </div>
+
+    <h4>On peut déplacer cette charge test autour de la charge source et voir la force électrique que la charge test ressentirait en ce point.</h4>
+
+    <div id="canvas-container" style="display: flex; justify-content: center; margin-top: 20px;">
+        <canvas id="p5-canvas"></canvas>
+    </div>
+
+    <script>
+        let x = 0.5;
+        let y = 0.5;
+        let size = 1;
+        let vectors = [];
+        let originChargePositive = true;
+        let pointChargePositive = true;
+        let dragging = false;
+
+        function setup() {
+            let canvas = createCanvas(600, 600);
+            document.getElementById("canvas-container").appendChild(canvas.elt);
+            noFill();
+            strokeWeight(1);
+            for (let x0 = -size; x0 <= size; x0 += 0.05) {
+                for (let y0 = -size; y0 <= size; y0 += 0.05) {
+                    let r = sqrt(x0 * x0 + y0 * y0);
+                    if (r < 0.01) continue;
+
+                    let magnitude = log(1 / (r * r));
+                    let vx = (x0 / r);
+                    let vy = (y0 / r);
+                    vectors.push({x0, y0, vx, vy, magnitude});
+                }
+            }
+
+            select('#originCharge').changed(() => {
+                originChargePositive = select('#originCharge').checked();
+                updateLabels();
+            });
+            select('#pointCharge').changed(() => {
+                pointChargePositive = select('#pointCharge').checked();
+                updateLabels();
+            });
+
+            updateLabels();
+        }
+
+        function updateLabels() {
+            document.querySelector('#originLabel').textContent = originChargePositive ? "Positive" : "Négative";
+            document.querySelector('#pointLabel').textContent = pointChargePositive ? "Positive" : "Négative";
+        }
+
+        function draw() {
+            background(255);
+
+            for (let v of vectors) {
+                let px = map(v.x0, -size, size, 0, width);
+                let py = map(v.y0, -size, size, 0, height);
+                let ux = map(v.vx, -1, 1, -10, 10);
+                let uy = map(v.vy, -1, 1, -10, 10);
+
+                let col = color(map(v.magnitude, 0, 1, 255, 0), map(v.magnitude, 0, 1, 0, 255), 255);
+                drawArrow(px, py, (originChargePositive ? 1 : -1)*ux, (originChargePositive ? 1 : -1)*uy, col);
+            }
+
+            let px = map(x, -size, size, 0, width);
+            let py = map(y, -size, size, height, 0);
+            fill(0);
+            ellipse(px, py, 10, 10);
+            fill(255);
+            textSize(12);
+            textAlign(CENTER, CENTER);
+            text((pointChargePositive ? "+" : "-"), px, py);
+
+            let r = sqrt(x * x + y * y);
+            let ux = map(x/(r*r*r), -1, 1, -10, 10);
+            let uy = map(-y/(r*r*r), -1, 1, -10, 10);
+            drawArrow(px, py, (pointChargePositive ? 1 : -1)*(originChargePositive ? 1 : -1)*ux, (pointChargePositive ? 1 : -1)*(originChargePositive ? 1 : -1)*uy, 0);
+
+            fill(0);
+            let centralX = map(0, -size, size, 0, width);
+            let centralY = map(0, -size, size, height, 0);
+            ellipse(centralX, centralY, 10, 10);
+            fill(255);
+            text((originChargePositive ? "+" : "-"), centralX, centralY);
+        }
+
+        function drawArrow(x, y, vx, vy, col) {
+            push();
+            stroke(col);
+            translate(x, y);
+            let angle = atan2(vy, vx);
+            let len = dist(0, 0, vx, vy);
+            line(0, 0, vx, vy);
+            let arrowSize = 6;
+            push();
+            rotate(angle);
+            translate(len + arrowSize, 0);
+            triangle(0, 0, -arrowSize, arrowSize / 2, -arrowSize, -arrowSize / 2);
+            pop();
+            pop();
+        }
+
+        function mousePressed() {
+            let px = map(x, -size, size, 0, width);
+            let py = map(y, -size, size, height, 0);
+            let d = dist(mouseX, mouseY, px, py);
+            if (d < 10) {
+                dragging = true;
+            }
+        }
+
+        function mouseReleased() {
+            dragging = false;
+        }
+
+        function mouseDragged() {
+            if (dragging) {
+                x = map(constrain(mouseX, 5, width - 5), 0, width, -size, size);
+                y = map(constrain(mouseY, 5, height - 5), 0, height, size, -size);
+            }
+        }
+
+        function touchStarted() {
+            mousePressed();
+            return false;
+        }
+
+        function touchEnded() {
+            mouseReleased();
+            return false;
+        }
+
+        function touchMoved() {
+            mouseDragged();
+            return false;
+        }
+    </script>
+</body>
+</html>
