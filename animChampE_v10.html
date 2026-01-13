@@ -56,6 +56,11 @@
             font-size: 14px;
         }
 
+        /* Prevent zooming and scrolling on the canvas */
+        #p5-canvas {
+            touch-action: none; /* Disable touch actions (scroll, zoom, etc.) */
+        }
+
     </style>
 </head>
 <body>
@@ -124,11 +129,6 @@
             });
 
             updateLabels();
-
-            // Prevent scrolling on the document
-            document.body.addEventListener("touchmove", function(e) {
-                e.preventDefault(); // Prevent scrolling
-            }, { passive: false });
 
             // Touch events
             canvas.elt.addEventListener("touchstart", handleTouchStart, {passive: false});
