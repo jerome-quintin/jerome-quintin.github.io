@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Champ électrique d'une charge ponctuelle</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <style>
@@ -204,7 +204,7 @@
             }
         }
 
-        // Handle touch events for mobile screens
+        // Handle touch events
         function touchStarted() {
             let px = map(x, -size, size, 0, width);
             let py = map(y, -size, size, height, 0);
@@ -212,22 +212,32 @@
             if (d < 10) {
                 dragging = true;
             }
-            return false;  // Prevent page scrolling
-        }
-
-        function touchEnded() {
-            dragging = false;
-            return false;
         }
 
         function touchMoved() {
             if (dragging) {
-                // Adjust the touch coordinates for dragging the test charge
+                // Update the test charge's position based on touch movement
                 x = map(constrain(touchX, 5, width - 5), 0, width, -size, size);
                 y = map(constrain(touchY, 5, height - 5), 0, height, size, -size);
             }
-            return false;  // Prevent page scrolling
         }
+
+        function touchEnded() {
+            dragging = false;
+        }
+
+        // Attach touch and mouse event listeners
+        function setupEvents() {
+            canvas.mousePressed(mousePressed);
+            canvas.mouseReleased(mouseReleased);
+            canvas.mouseDragged(mouseDragged);
+
+            canvas.touchStarted(touchStarted);
+            canvas.touchMoved(touchMoved);
+            canvas.touchEnded(touchEnded);
+        }
+
+        setupEvents();
     </script>
 </body>
 </html>
