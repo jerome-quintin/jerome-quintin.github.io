@@ -129,16 +129,14 @@
 
             updateLabels();
 
-            // Prevent touch actions outside the canvas but allow scrolling elsewhere
             canvas.elt.addEventListener("touchstart", handleTouchStart, {passive: false});
             canvas.elt.addEventListener("touchmove", handleTouchMove, {passive: false});
             canvas.elt.addEventListener("touchend", handleTouchEnd, {passive: false});
             canvas.elt.addEventListener("touchcancel", handleTouchEnd, {passive: false});
 
-            // Allow scrolling elsewhere
             document.body.addEventListener("touchmove", function (e) {
                 if (dragging) {
-                    e.preventDefault(); // Prevent scrolling when dragging the canvas charge
+                    e.preventDefault();
                 }
             }, { passive: false });
         }
@@ -160,7 +158,7 @@
                 dragging = true;
             }
 
-            e.preventDefault();  // Prevent page scroll while dragging
+            e.preventDefault();
         }
 
         function handleTouchMove(e) {
@@ -171,7 +169,7 @@
             y = map(constrain(touchY, 5, height - 5), 0, height, size, -size);
 
             draw();
-            e.preventDefault();  // Prevent page scroll while dragging
+            e.preventDefault();
         }
 
         function handleTouchEnd(e) {
@@ -234,7 +232,6 @@
             pop();
         }
 
-        // Mouse events for dragging
         function mousePressed() {
             let px = map(x, -size, size, 0, width);
             let py = map(y, -size, size, height, 0);
