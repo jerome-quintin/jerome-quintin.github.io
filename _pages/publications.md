@@ -1,5 +1,6 @@
 ---
 permalink: /publications/
+lang: en
 title: "Publications"
 ---
 

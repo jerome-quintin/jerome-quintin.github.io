@@ -1,5 +1,6 @@
 ---
 permalink: /research/
+lang: en
 title: "Research"
 ---
 

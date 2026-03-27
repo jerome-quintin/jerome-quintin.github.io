@@ -1,5 +1,6 @@
 ---
 permalink: /talks/
+lang: en
 title: "Talks"
 ---
 

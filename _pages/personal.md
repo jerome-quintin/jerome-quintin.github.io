@@ -1,5 +1,6 @@
 ---
 permalink: /personal/
+lang: en
 title: "Personal"
 gallery:
   - url: /assets/images/gallery/Lac-Brome.jpg

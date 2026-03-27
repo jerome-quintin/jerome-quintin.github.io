@@ -1,0 +1,11 @@
+{% if page.lang == "fr" %}
+  {% assign nav = site.data.navigation.main_fr %}
+{% else %}
+  {% assign nav = site.data.navigation.main_en %}
+{% endif %}
+
+<ul class="nav__items">
+  {% for item in nav %}
+    <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+  {% endfor %}
+</ul>

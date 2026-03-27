@@ -1,6 +1,8 @@
 ---
 permalink: /about/
+lang: en
 title: "About"
+ref: about
 ---
 
 I am a theoretical physicist working at the interface between high-energy physics and astrophysics. More precisely I am a theoretical cosmologist interested in learning about the origin of our universe, its fate, and the evolution of its constituents in between. I like to explore corners of the universe where gravity meets quantum physics and to use cosmology, together with high-energy physics and astrophysics, to explore the frontiers of fundamental physics.
@@ -8,7 +10,7 @@ I am a theoretical physicist working at the interface between high-energy physic
 Brief bio
 ===============
 
-I am originally from the Province of Québec in Canada (my mother tongue is Québecois French). My first name actually spells Jérôme (though I often anglicize it for practical reasons). A French version of this website should appear shortly.
+I am originally from the Province of Québec in Canada (my mother tongue is Québecois French). My first name actually spells Jérôme (though I often anglicize it for practical reasons). A [French version of this website](/) should appear shortly.
 
 I was raised doing competitive sports (mostly figure skating, but also short track speed skating; I'm still active, see my [personal page](/personal/)), but I've always answered the question "What do you want to be when you grow up?" with "Astrophysicist!" (Not completely true. Very young my answer was actually "paleontologist.") I can trace it back to a fascination about planets and geometry, quickly reinforced by reading [Hubert Reeves](https://www.hubertreeves.info).
 

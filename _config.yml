@@ -16,7 +16,7 @@
 title: Jerome Quintin
 email: jquintin@physics.mcgill.ca
 description: >- # this means to ignore newlines until "baseurl:"
-  Theoretical Cosmologist
+  #Theoretical Cosmologist
   #twitter_username: username
 github_username: jerome-quintin
 minimal_mistakes_skin: air
@@ -65,7 +65,7 @@ plugins:
 author:
   name   : "Jerome Quintin"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Theoretical Cosmologist"
+  #bio    : "Theoretical Cosmologist"
   #location         : "Ontario, Canada"
   email            : "jquintin@physics.mcgill.ca"
   #github           : "jerome-quintin"

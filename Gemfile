@@ -15,3 +15,12 @@ group :jekyll_plugins do
   gem "jekyll-include-cache"
   gem "jekyll-algolia"
 end
+
+gem "csv"
+gem "base64"
+gem "logger"
+gem "bigdecimal"
+gem "ostruct"
+gem "liquid", "~> 4.0.4"
+gem "webrick"
+gem "faraday-retry"

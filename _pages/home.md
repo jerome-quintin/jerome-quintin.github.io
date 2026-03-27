@@ -1,12 +1,14 @@
 ---
 layout: splash
-permalink: /
+permalink: /en/
+lang: en
+ref: home
 hidden: true
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/blackboard1.jpg
-excerpt: >
-  Welcome to my personal website!
+excerpt: >-
+  <span style="color:#111111;">Welcome to my personal website!</span>
 feature_row:
   - image_path: /assets/images/bio-photo.jpg
     alt: "about me"
