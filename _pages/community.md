@@ -23,7 +23,7 @@ title: "Community, Outreach and Press"
 
 - Talk for Cégep students at Marianopolis College, "Unveiling the Big Bang", Montréal, 23/01/2024
 
-- Talk for the [Club mathématique de l'Université de Sherbrooke](https://www.usherbrooke.ca/mathematiques/les-mathematiques/club-mathematique) entitled "Les mathématiques du Big Bang (The mathematics of the Big Bang)", Sherbrooke, 12/10/2023
+- Talk for the [Club mathématique de l'Université de Sherbrooke](https://www.usherbrooke.ca/mathematiques/activites-mathematiques/club-mathematique) entitled "Les mathématiques du Big Bang (The mathematics of the Big Bang)", Sherbrooke, 12/10/2023
 
 - Interviewed for a documentary by [Phil Halper](https://press.uchicago.edu/ucp/books/author/H/P/au131137314.html) released on YouTube (see below), which discusses [my paper on extensions before inflation](https://arxiv.org/abs/2305.01676).
 
@@ -44,6 +44,10 @@ Some of the clips were reused in this video:
 - Video by PBS Space Time (below), which discusses [my paper on extensions before inflation](https://arxiv.org/abs/2305.01676)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HRqBGnSxzyI?si=qmgQERDDmaztR6bV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+- Video by Sabine Hossenfelder (below), which discusses [my paper on inflation in quadratic gravity](https://arxiv.org/abs/2510.18733)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0xt5-FTpASM?si=voD91E3s9gYGRsZO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 - [Article by Quanta Magazine](https://www.quantamagazine.org/mathematicians-attempt-to-glimpse-past-the-big-bang-20240531/) about [my paper on extensions before inflation](https://arxiv.org/abs/2305.01676)
 - [UWaterloo Applied Math highlighted](https://uwaterloo.ca/applied-mathematics/news/applied-math-research-featured-quanta-magazine) the above Quanta article
@@ -89,7 +93,8 @@ More press that mentions [my paper on inflation in quantum quadratic gravity](ht
 - [Daily Kos](https://www.dailykos.com/stories/2026/4/4/2375234/community/overnight-news-digest-science-saturday-4-4-26/)
 - [Neo science hub](https://neosciencehub.com/einstein-revisited-new-modifications-to-relativity-that-could-reframe-the-big-bang/)
 
-More press that mentions [my paper on extensions before inflation](https://arxiv.org/abs/2305.01676):
+More mentions of [my paper on extensions before inflation](https://arxiv.org/abs/2305.01676):
+- [Battle of the Big Bang](https://press.uchicago.edu/ucp/books/book/chicago/B/bo244963115.html), a popular book by [Niayesh Afshordi](https://nafshordi.com/) and [Phil Halper](https://press.uchicago.edu/ucp/books/author/H/P/au131137314.html)
 - [Big Think 1](https://bigthink.com/starts-with-a-bang/singularities-physically-real/), [Big Think 2](https://bigthink.com/starts-with-a-bang/how-universe-truly-begin/), [Big Think 3](https://bigthink.com/starts-with-a-bang/ask-ethan-why-big-bang-tube/), [Big Think 4](https://bigthink.com/starts-with-a-bang/ask-ethan-cosmic-inflation-big-bang/)
 - [Wired](https://www.wired.com/story/what-came-before-the-big-bang/)
 - [Presse-citron (in French)](https://www.presse-citron.net/lenigme-des-origines-quy-avait-il-avant-le-big-bang/)
@@ -99,6 +104,7 @@ More press that mentions [my paper on extensions before inflation](https://arxiv
 - [Cultura cientifica (in Spanish)](https://culturacientifica.com/2024/06/04/las-matematicas-intentan-escudrinar-mas-alla-del-big-bang/?utm_source=rss&utm_medium=rss&utm_campaign=las-matematicas-intentan-escudrinar-mas-alla-del-big-bang)
 
 More mentions of [my paper suggesting our universe may be "small"](https://arxiv.org/abs/2309.03272):
+- [Der Anfang von Raum und Zeit](https://www.droemer-knaur.de/buch/dr-jean-luc-lehners-der-anfang-von-raum-und-zeit-9783426569542), a popular book (in German) by [Jean-Luc Lehners](https://jeanluclehners.com/)
 - [This Wikipedia article on the topic of the Observable universe](https://en.wikipedia.org/wiki/Observable_universe)
 - [Article on Universe Today](https://www.universetoday.com/163112/the-case-for-a-small-universe/#more-163112)
 - [Article on Phys.org](https://phys.org/news/2023-09-case-small-universe.html)
