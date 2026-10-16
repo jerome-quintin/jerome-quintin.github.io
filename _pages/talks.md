@@ -20,9 +20,9 @@ I also presented this topic as part of the [Copernicus Webinar and Colloquium Se
 I gave a longer version of this talk also at the [Institute for Basic Science in Daejeon, Korea, as part of a Workshop on Cosmological Collider](https://indico.ibs.re.kr/event/670/): [slides](https://indico.ibs.re.kr/event/670/contributions/5848/attachments/4268/5636/talk_IBS_Quintin.pdf){: .btn .btn--info}
 
 - Online talk given during the [2021 Canadian Association of Physicists Congress](https://www.cap.ca/congress-conference/past-congress/2021-cap-virtual-congress-june-6-11/invited-speakers/) mainly presenting [arXiv:2012.04911](https://arxiv.org/abs/2012.04911), [arXiv:2102.05550](https://arxiv.org/abs/2102.05550), and work to appear: [slides](../assets/docs/slides_CAP_Quintin.pdf){: .btn .btn--info}  
-I gave a longer version of this talk also at [McGill on 01/12/2021](https://www.physics.mcgill.ca/thep-talks/old_websites/HEPTHwebsite_fall21.html) and at [Perimeter on 30/11/2021](https://perimeterinstitute.ca/events/discriminating-between-theories-very-early-universe): [slides](../assets/docs/Quintin_slides_Perimeter.pdf){: .btn .btn--info} and [video](https://pirsa.org/21110043){: .btn .btn--info}
+I gave a longer version of this talk also at McGill on 01/12/2021 and at [Perimeter on 30/11/2021](https://perimeterinstitute.ca/events/discriminating-between-theories-very-early-universe): [slides](../assets/docs/Quintin_slides_Perimeter.pdf){: .btn .btn--info} and [video](https://pirsa.org/21110043){: .btn .btn--info}
 
-- Online talk given during the [Atlantic General Relativity Conference](https://atlanticgr2022.ca/) on 19/05/2022 mainly about [my paper on complex metrics in cosmology](https://arxiv.org/abs/2205.15332): [slides](../assets/docs/Quintin_slides_AtlanticGR.pdf){: .btn .btn--info}
+- Online talk given during the Atlantic General Relativity Conference on 19/05/2022 mainly about [my paper on complex metrics in cosmology](https://arxiv.org/abs/2205.15332): [slides](../assets/docs/Quintin_slides_AtlanticGR.pdf){: .btn .btn--info}
 
 - Online talk given during the conference [Alternative Gravities and Fundamental Cosmology](https://indico.cern.ch/event/873762/) on 06/09/2021 mainly about [my paper on the principle of finite amplitudes in cosmology](https://arxiv.org/abs/2102.05550): [slides](../assets/docs/slides_AltFunCosmo21_Quintin.pdf){: .btn .btn--info}  
 I gave a close version of this talk also during an online workshop on 08/11/2021 organized by the Yukawa Institute for Theoretical Physics (Kyoto University), [Recent Progress of Quantum Cosmology](https://www2.yukawa.kyoto-u.ac.jp/~rpqc2021/program.php).
@@ -54,13 +54,12 @@ See also the presentation on YouTube below.
 - Seminar given for the Cosmology Journal Club of the Department of Applied Mathematics and Theoretical Physics of the University of Cambridge, UK on 19/11/2019 about [my paper on cuscuton gravity](https://arxiv.org/abs/1911.06040): [slides](../assets/docs/slides_DAMTP_final.pdf){: .btn .btn--info}  
 I gave a close version of this talk also during the [Autumn workshop on gravity and cosmology at the University of Warsaw, Poland](https://indico.cern.ch/event/851611/) on 12/11/2019 ([slides](../assets/docs/slides_Warsaw_final.pdf)) and at [Dartmouth College on 03/04/2019](https://home.dartmouth.edu/events/event?event=55757#.X9-i7lOYWV4) (blackboard).
 
-- Talk given at the Harvard Institute for Theory and Computation ([ITC Luncheon on 13/09/2018](https://itc.cfa.harvard.edu/itc-luncheon-2018-2019-0)) about [my paper on black hole formation in a contracting universe](https://arxiv.org/abs/1609.02556): [slides](../assets/docs/slides_ITC_Luncheon_Jerome_Quintin.pdf){: .btn .btn--info}  
+- Talk given at the Harvard Institute for Theory and Computation (ITC Luncheon on 13/09/2018) about [my paper on black hole formation in a contracting universe](https://arxiv.org/abs/1609.02556): [slides](../assets/docs/slides_ITC_Luncheon_Jerome_Quintin.pdf){: .btn .btn--info}  
 See also the presentation on YouTube below.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/odxTFFjWw4I?start=3070" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 - Talk given at McGill University for the [North-East Cosmology Workshop](https://www.physics.mcgill.ca/~rhb/Dartmouth/NE-WorkshopProgram.html) on 17/03/2018 about my [paper on massive gravity and matter bounce cosmology](https://arxiv.org/abs/1711.10472): [slides](../assets/docs/slides_McGill_Quintin.pdf){: .btn .btn--info}  
-I gave a close version of this talk also at [Princeton in January 2018](https://bouncingcosmology.com/special-events.html#jerome) (blackboard) and at Harvard-ITC on 07/09/2018: [slides](../assets/docs/slides_ITC_Quintin.pdf){: .btn .btn--info}
+I gave a close version of this talk also at Princeton in January 2018 (blackboard) and at Harvard-ITC on 07/09/2018: [slides](../assets/docs/slides_ITC_Quintin.pdf){: .btn .btn--info}  
 
 - Talk given at Imperial College on 19/05/2017 about [my paper on limiting curvature (arXiv:1704.04184)](https://arxiv.org/abs/1704.04184): [slides](../assets/docs/slides_Imperial_Quintin.pdf){: .btn .btn--info}  
-I gave a close version of this talk also at [COSMO-17 in Paris](http://cosmo17.in2p3.fr/parallelmg.html).
