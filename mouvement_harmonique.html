@@ -45,7 +45,11 @@
     .control-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
     label { font-size: .91rem; font-weight: 700; }
     output { color: var(--accent-dark); font-size: .9rem; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
-    input[type="range"] { display: block; width: 100%; height: 44px; margin: 5px 0 0; accent-color: var(--accent); cursor: pointer; touch-action: pan-y; }
+    input[type="range"] { appearance: none; -webkit-appearance: none; display: block; width: 100%; height: 64px; margin: 5px 0 0; background: transparent; cursor: pointer; touch-action: pan-y; }
+    input[type="range"]::-webkit-slider-runnable-track { height: 8px; background: #cbd8ce; border-radius: 4px; }
+    input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; box-sizing: border-box; width: 44px; height: 44px; margin-top: -18px; border: 2px solid white; border-radius: 50%; background: var(--accent); }
+    input[type="range"]::-moz-range-track { height: 8px; background: #cbd8ce; border-radius: 4px; }
+    input[type="range"]::-moz-range-thumb { box-sizing: border-box; width: 44px; height: 44px; border: 2px solid white; border-radius: 50%; background: var(--accent); }
     input[type="range"]:focus-visible, button:focus-visible { outline: 3px solid #286d9c; outline-offset: 3px; }
     .bounds { display: flex; justify-content: space-between; color: #7e8a91; font-size: .74rem; font-variant-numeric: tabular-nums; }
     button { min-height: 44px; width: 100%; margin-top: 23px; border: 1px solid #d8dedc; border-radius: 10px; background: #fff; color: #334955; font: inherit; font-size: .87rem; font-weight: 700; cursor: pointer; }
