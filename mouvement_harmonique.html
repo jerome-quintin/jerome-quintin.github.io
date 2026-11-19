@@ -50,10 +50,13 @@
     input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; box-sizing: border-box; width: 44px; height: 44px; margin-top: -18px; border: 2px solid white; border-radius: 50%; background: var(--accent); }
     input[type="range"]::-moz-range-track { height: 8px; background: #cbd8ce; border-radius: 4px; }
     input[type="range"]::-moz-range-thumb { box-sizing: border-box; width: 44px; height: 44px; border: 2px solid white; border-radius: 50%; background: var(--accent); }
-    input[type="range"]:focus-visible, button:focus-visible { outline: 3px solid #286d9c; outline-offset: 3px; }
+    input[type="range"]:focus-visible, button:focus-visible, .page-nav a:focus-visible { outline: 3px solid #286d9c; outline-offset: 3px; }
     .bounds { display: flex; justify-content: space-between; color: #7e8a91; font-size: .74rem; font-variant-numeric: tabular-nums; }
     button { min-height: 44px; width: 100%; margin-top: 23px; border: 1px solid #d8dedc; border-radius: 10px; background: #fff; color: #334955; font: inherit; font-size: .87rem; font-weight: 700; cursor: pointer; }
     button:hover { background: #f5f8f7; }
+    .page-nav { display: flex; justify-content: space-between; gap: 12px; margin-top: 20px; }
+    .page-nav a { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; padding: 0 24px; border-radius: 10px; background: var(--accent); color: #fff; font-size: .9rem; font-weight: 700; text-decoration: none; }
+    .page-nav a:hover { background: var(--accent-dark); }
     .footnote { color: #75828a; font-size: .76rem; line-height: 1.5; margin: 19px 0 0; }
     @media (max-width: 880px) {
       main { padding-top: 32px; }
@@ -67,6 +70,10 @@
       .plot-wrap { height: 290px; margin-top: 16px; }
       .controls { padding: 20px; }
       .legend { font-size: .78rem; }
+    }
+    @media (max-width: 600px) {
+      main { padding-bottom: calc(20px + env(safe-area-inset-bottom, 0px)); }
+      .page-nav a { flex: 1; min-width: 0; padding: 0 8px; }
     }
     @media (max-width: 600px) and (min-height: 700px) {
       .plot-card { position: sticky; top: 8px; z-index: 1; }
@@ -125,6 +132,10 @@
         <!--<p class="footnote">Les valeurs initiales correspondent approximativement aux mesures. Le temps est converti en secondes dans le calcul du sinus.</p>-->
       </section>
     </div>
+    <nav class="page-nav" aria-label="Navigation entre les pages">
+      <a href="bloc-ressort.html">Page précédente</a>
+      <a href="">Prochaine page</a>
+    </nav>
   </main>
   <script>
     "use strict";
