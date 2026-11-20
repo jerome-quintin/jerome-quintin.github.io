@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Champ électrique d'un électron</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --accent: #286047;
+      --accent-dark: #244b38;
+      font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+      color: #1d2b37;
+      background: #f2f5f2;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    main { max-width: 980px; margin: auto; padding: 48px clamp(16px, 4vw, 56px) 64px; }
+    .card { min-width: 0; background: #fff; border: 1px solid #e3e5e3; border-radius: 20px; box-shadow: 0 10px 35px #2333410a; }
+    .stage { padding: clamp(16px, 2.5vw, 28px); }
+    h1 { margin: 0; font-size: 1.13rem; letter-spacing: -.02em; }
+    .instruction { margin: 7px 0 0; color: #687782; font-size: .88rem; line-height: 1.5; }
+    .field { position: relative; width: 100%; aspect-ratio: 1; margin-top: 16px; touch-action: pan-y; }
+    canvas { display: block; width: 100%; height: 100%; pointer-events: none; }
+    .electron {
+      position: absolute; left: 50%; top: 50%; width: 64px; height: 64px;
+      transform: translate(-50%, -50%); padding: 0; border: 0; border-radius: 50%;
+      background: transparent; cursor: grab; touch-action: none;
+    }
+    .electron::before {
+      content: ""; position: absolute; inset: 18px; border-radius: 50%;
+      background: #f28e2b; box-shadow: 0 0 0 2px #fff;
+    }
+    .electron::after {
+      content: ""; position: absolute; left: 25px; right: 25px; top: 30px;
+      height: 4px; border-radius: 2px; background: #fff;
+    }
+    .electron.dragging { cursor: grabbing; }
+    .electron:focus-visible, .page-nav a:focus-visible { outline: 3px solid #286d9c; outline-offset: 3px; }
+    .page-nav { display: flex; justify-content: space-between; gap: 12px; margin-top: 20px; }
+    .page-nav a { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; padding: 0 24px; border-radius: 10px; background: var(--accent); color: #fff; font-size: .9rem; font-weight: 700; text-decoration: none; }
+    .page-nav a:hover { background: var(--accent-dark); }
+    @media (max-width: 880px) { main { padding-top: 32px; } }
+    @media (max-width: 480px) {
+      main { padding: 26px 12px 40px; }
+      .card { border-radius: 16px; }
+      .stage { padding: 16px 12px; }
+    }
+    @media (max-width: 600px) {
+      main { padding-bottom: calc(20px + env(safe-area-inset-bottom, 0px)); }
+      .page-nav a { flex: 1; min-width: 0; padding: 0 8px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="card stage" aria-labelledby="titre">
+      <h1 id="titre">Faites bouger l’électron !</h1>
+      <p class="instruction" id="instruction">Glissez l’électron avec la souris ou le doigt, ou déplacez-le avec les flèches du clavier.</p>
+      <div class="field" id="field">
+        <canvas id="canvas" role="img" aria-label="Directions du champ électrique autour de l’électron. Les changements se propagent progressivement."></canvas>
+        <button id="electron" class="electron" type="button" aria-label="Électron" aria-describedby="instruction" aria-keyshortcuts="ArrowUp ArrowDown ArrowLeft ArrowRight"></button>
+      </div>
+    </section>
+    <nav class="page-nav" aria-label="Navigation entre les pages">
+      <a href="mouvement_harmonique.html">Page précédente</a>
+      <a href="">Prochaine page</a>
+    </nav>
+  </main>
+  <script>
+    "use strict";
+
+    const LIMIT = 4;
+    const TARGET_LIMIT = 2.8;
+    const LIGHT_SPEED = 4.5;
+    const STEP = 1 / 120;
+    const MAX_SPEED = 1.8;
+    const MAX_ACCELERATION = 9;
+    const HISTORY_SECONDS = 6;
+
+    function limitedVector(x, y, limit) {
+      const length = Math.hypot(x, y);
+      if (length <= limit) return [x, y];
+      return [x * limit / length, y * limit / length];
+    }
+
+    class ElectronSimulation {
+      constructor() {
+        this.time = 0;
+        this.target = { x: 0, y: 0 };
+        this.history = [{ t: 0, x: 0, y: 0, vx: 0, vy: 0, ax: 0, ay: 0 }];
+      }
+
+      get current() {
+        return this.history[this.history.length - 1];
+      }
+
+      setTarget(x, y) {
+        this.target.x = Math.max(-TARGET_LIMIT, Math.min(TARGET_LIMIT, x));
+        this.target.y = Math.max(-TARGET_LIMIT, Math.min(TARGET_LIMIT, y));
+      }
+
+      advance() {
+        const p = this.current;
+        let [ax, ay] = limitedVector(
+          22 * (this.target.x - p.x) - 7 * p.vx,
+          22 * (this.target.y - p.y) - 7 * p.vy,
+          MAX_ACCELERATION
+        );
+        const [vx, vy] = limitedVector(p.vx + ax * STEP, p.vy + ay * STEP, MAX_SPEED);
+        ax = (vx - p.vx) / STEP;
+        ay = (vy - p.vy) / STEP;
+        this.time += STEP;
+        this.history.push({
+          t: this.time,
+          x: p.x + (p.vx + vx) * STEP / 2,
+          y: p.y + (p.vy + vy) * STEP / 2,
+          vx, vy, ax, ay
+        });
+        while (this.history.length > 2 && this.history[1].t < this.time - HISTORY_SECONDS) {
+          this.history.shift();
+        }
+      }
+
+      retardedState(x, y) {
+        const history = this.history;
+        const first = history[0];
+        const firstArrival = first.t + Math.hypot(x - first.x, y - first.y) / LIGHT_SPEED;
+        if (firstArrival > this.time) {
+          if (first.t > 0) throw new Error("Historique insuffisant pour calculer le champ retardé.");
+          return first;
+        }
+        let low = 0;
+        let high = history.length - 1;
+        while (high - low > 1) {
+          const middle = Math.floor((low + high) / 2);
+          const p = history[middle];
+          if (p.t + Math.hypot(x - p.x, y - p.y) / LIGHT_SPEED <= this.time) {
+            low = middle;
+          } else {
+            high = middle;
+          }
+        }
+        const start = history[low];
+        const end = history[high];
+        if (low === high) return start;
+        let before = 0;
+        let after = end.t - start.t;
+        for (let i = 0; i < 10; i++) {
+          const dt = (before + after) / 2;
+          const px = start.x + start.vx * dt + end.ax * dt * dt / 2;
+          const py = start.y + start.vy * dt + end.ay * dt * dt / 2;
+          if (start.t + dt + Math.hypot(x - px, y - py) / LIGHT_SPEED <= this.time) {
+            before = dt;
+          } else {
+            after = dt;
+          }
+        }
+        const dt = (before + after) / 2;
+        return {
+          x: start.x + start.vx * dt + end.ax * dt * dt / 2,
+          y: start.y + start.vy * dt + end.ay * dt * dt / 2,
+          vx: start.vx + end.ax * dt,
+          vy: start.vy + end.ay * dt,
+          ax: end.ax,
+          ay: end.ay
+        };
+      }
+
+      fieldAt(x, y) {
+        const current = this.current;
+        if (Math.hypot(x - current.x, y - current.y) < 0.25) return null;
+        const p = this.retardedState(x, y);
+        const dx = x - p.x;
+        const dy = y - p.y;
+        const distance = Math.hypot(dx, dy);
+        if (distance === 0) throw new Error("Le champ est singulier à la position de l’électron.");
+        const nx = dx / distance;
+        const ny = dy / distance;
+        const bx = p.vx / LIGHT_SPEED;
+        const by = p.vy / LIGHT_SPEED;
+        const bax = p.ax / LIGHT_SPEED;
+        const bay = p.ay / LIGHT_SPEED;
+        const kappa = 1 - nx * bx - ny * by;
+        const beta2 = bx * bx + by * by;
+        const dot = nx * bax + ny * bay;
+        const velocityFactor = (1 - beta2) / (kappa ** 3 * distance ** 2);
+        const radiationFactor = 1 / (LIGHT_SPEED * kappa ** 3 * distance);
+        const ex = -((nx - bx) * velocityFactor + ((nx - bx) * dot - bax * kappa) * radiationFactor);
+        const ey = -((ny - by) * velocityFactor + ((ny - by) * dot - bay * kappa) * radiationFactor);
+        if (!Number.isFinite(ex) || !Number.isFinite(ey)) {
+          throw new Error("Impossible de calculer le champ électrique.");
+        }
+        return { x: ex, y: ey };
+      }
+    }
+
+    const canvas = document.getElementById("canvas");
+    const field = document.getElementById("field");
+    const electron = document.getElementById("electron");
+    const ctx = canvas.getContext("2d");
+    if (!ctx) throw new Error("Le navigateur ne permet pas d’afficher la simulation.");
+    const simulation = new ElectronSimulation();
+    let activePointer = null;
+    let offsetX = 0;
+    let offsetY = 0;
+    let lastFrame = null;
+    let accumulated = 0;
+
+    function toPixels(x, y, size) {
+      return [(x + LIMIT) * size / (2 * LIMIT), (LIMIT - y) * size / (2 * LIMIT)];
+    }
+
+    function pointerPosition(event) {
+      const bounds = field.getBoundingClientRect();
+      return {
+        x: (event.clientX - bounds.left) * 2 * LIMIT / bounds.width - LIMIT,
+        y: LIMIT - (event.clientY - bounds.top) * 2 * LIMIT / bounds.height
+      };
+    }
+
+    function moveTarget(event) {
+      const point = pointerPosition(event);
+      simulation.setTarget(point.x + offsetX, point.y + offsetY);
+    }
+
+    electron.addEventListener("pointerdown", event => {
+      if (activePointer !== null || (event.pointerType === "mouse" && event.button !== 0)) return;
+      event.preventDefault();
+      const point = pointerPosition(event);
+      offsetX = simulation.current.x - point.x;
+      offsetY = simulation.current.y - point.y;
+      activePointer = event.pointerId;
+      electron.setPointerCapture(event.pointerId);
+      electron.classList.add("dragging");
+      electron.focus({ preventScroll: true });
+    });
+    electron.addEventListener("pointermove", event => {
+      if (event.pointerId === activePointer) moveTarget(event);
+    });
+    function endDrag(event) {
+      if (event.pointerId !== activePointer) return;
+      if (event.type === "pointerup") moveTarget(event);
+      activePointer = null;
+      electron.classList.remove("dragging");
+    }
+    electron.addEventListener("pointerup", endDrag);
+    electron.addEventListener("pointercancel", endDrag);
+    electron.addEventListener("lostpointercapture", endDrag);
+    electron.addEventListener("keydown", event => {
+      const moves = {
+        ArrowLeft: [-0.35, 0], ArrowRight: [0.35, 0],
+        ArrowUp: [0, 0.35], ArrowDown: [0, -0.35]
+      };
+      const move = moves[event.key];
+      if (!move) return;
+      event.preventDefault();
+      simulation.setTarget(simulation.target.x + move[0], simulation.target.y + move[1]);
+    });
+
+    function resize() {
+      const size = field.clientWidth;
+      const ratio = Math.min(window.devicePixelRatio || 1, 2);
+      canvas.width = Math.round(size * ratio);
+      canvas.height = Math.round(size * ratio);
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+    }
+
+    function draw() {
+      const size = field.clientWidth;
+      ctx.clearRect(0, 0, size, size);
+      const count = 23;
+      const spacing = size / (count + 1);
+      const length = spacing * 0.68;
+      const headLength = Math.max(3, length * 0.3);
+      const headWidth = Math.max(2, length * 0.19);
+      const arrows = [];
+      for (let row = 1; row <= count; row++) {
+        for (let col = 1; col <= count; col++) {
+          const x = col * 2 * LIMIT / (count + 1) - LIMIT;
+          const y = LIMIT - row * 2 * LIMIT / (count + 1);
+          const value = simulation.fieldAt(x, y);
+          if (value === null) continue;
+          const magnitude = Math.hypot(value.x, value.y);
+          if (magnitude < 1e-14) continue;
+          const ux = value.x / magnitude;
+          const uy = -value.y / magnitude;
+          const cx = col * spacing;
+          const cy = row * spacing;
+          arrows.push([cx, cy, ux, uy]);
+        }
+      }
+      ctx.strokeStyle = "#3979a6";
+      ctx.fillStyle = "#3979a6";
+      ctx.lineWidth = Math.max(1, Math.min(2, size / 420));
+      ctx.lineCap = "round";
+      ctx.beginPath();
+      for (const [x, y, ux, uy] of arrows) {
+        ctx.moveTo(x - ux * length / 2, y - uy * length / 2);
+        ctx.lineTo(x + ux * (length / 2 - headLength), y + uy * (length / 2 - headLength));
+      }
+      ctx.stroke();
+      ctx.beginPath();
+      for (const [x, y, ux, uy] of arrows) {
+        const tipX = x + ux * length / 2;
+        const tipY = y + uy * length / 2;
+        const baseX = tipX - ux * headLength;
+        const baseY = tipY - uy * headLength;
+        ctx.moveTo(tipX, tipY);
+        ctx.lineTo(baseX - uy * headWidth, baseY + ux * headWidth);
+        ctx.lineTo(baseX + uy * headWidth, baseY - ux * headWidth);
+        ctx.closePath();
+      }
+      ctx.fill();
+      const [x, y] = toPixels(simulation.current.x, simulation.current.y, size);
+      electron.style.left = `${x}px`;
+      electron.style.top = `${y}px`;
+    }
+
+    function frame(now) {
+      if (lastFrame !== null) accumulated += Math.min((now - lastFrame) / 1000, 0.05);
+      lastFrame = now;
+      while (accumulated >= STEP) {
+        simulation.advance();
+        accumulated -= STEP;
+      }
+      draw();
+      requestAnimationFrame(frame);
+    }
+
+    document.addEventListener("visibilitychange", () => {
+      lastFrame = null;
+      accumulated = 0;
+    });
+    new ResizeObserver(resize).observe(field);
+    resize();
+    draw();
+    requestAnimationFrame(frame);
+  </script>
+</body>
+</html>
