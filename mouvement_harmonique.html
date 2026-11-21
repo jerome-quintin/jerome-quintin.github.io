@@ -58,6 +58,29 @@
     .page-nav a { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; padding: 0 24px; border-radius: 10px; background: var(--accent); color: #fff; font-size: .9rem; font-weight: 700; text-decoration: none; }
     .page-nav a:hover { background: var(--accent-dark); }
     .footnote { color: #75828a; font-size: .76rem; line-height: 1.5; margin: 19px 0 0; }
+    .matching-game { margin-top: 20px; padding: clamp(16px, 2.5vw, 28px); }
+    .game-instructions { margin: 8px 0 20px; color: #56636d; line-height: 1.5; }
+    .game-board { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(190px, 250px); gap: clamp(48px, 8vw, 120px); }
+    .game-graphs, .game-answers { position: relative; z-index: 1; min-width: 0; }
+    .game-graphs { display: grid; gap: 12px; }
+    .game-graph { display: block; margin: 0; padding: 8px; text-align: left; }
+    .game-graph[aria-pressed="true"] { border-color: var(--accent); background: #edf6ef; box-shadow: 0 0 0 2px var(--accent); }
+    .game-graph:disabled { opacity: 1; cursor: default; border-color: #9dc8a8; background: #f5faf6; }
+    .game-graph-label { display: block; padding: 2px 4px 5px; font-size: .82rem; }
+    .game-graph img { display: block; width: 100%; height: auto; }
+    .game-feedback { min-height: 1.5em; margin: 4px 4px 0; font-size: .85rem; font-weight: 700; }
+    .game-feedback.correct { color: #24663c; }
+    .game-feedback.incorrect { color: #aa2929; }
+    .game-answers { display: flex; flex-direction: column; justify-content: space-around; gap: 10px; }
+    .game-selection { margin: 0; color: #56636d; font-size: .85rem; }
+    .game-answer { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin: 0; padding: 10px 14px; text-align: left; }
+    .game-answer:disabled { cursor: default; color: #687782; background: #f5f7f5; }
+    .game-answer.matched:disabled { color: #24663c; border-color: #9dc8a8; background: #f5faf6; }
+    .game-answer-mark { color: #24663c; font-size: 1.2rem; }
+    .game-lines { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+    .game-lines line { stroke: #388355; stroke-width: 2.5; }
+    .game-progress { min-height: 1.5em; margin: 12px 0 0; color: #24663c; font-weight: 700; }
+    .game-reset { width: auto; margin: 8px 0 0; padding: 0 18px; }
     @media (max-width: 880px) {
       main { padding-top: 32px; }
       .layout { grid-template-columns: minmax(0, 1fr); margin-top: 24px; }
@@ -74,6 +97,9 @@
     @media (max-width: 600px) {
       main { padding-bottom: calc(20px + env(safe-area-inset-bottom, 0px)); }
       .page-nav a { flex: 1; min-width: 0; padding: 0 8px; }
+      .game-board { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+      .game-answers { gap: 8px; }
+      .game-lines { display: none; }
     }
     @media (max-width: 600px) and (min-height: 700px) {
       .plot-card { position: sticky; top: 8px; z-index: 1; }
@@ -132,6 +158,51 @@
         <!--<p class="footnote">Les valeurs initiales correspondent approximativement aux mesures. Le temps est converti en secondes dans le calcul du sinus.</p>-->
       </section>
     </div>
+    <section class="card matching-game" aria-labelledby="game-title">
+      <h2 id="game-title">Reliez les graphiques aux paramètres</h2>
+      <p class="game-instructions">Sélectionnez un graphique, puis le paramètre qui varie dans l’animation.</p>
+      <div class="game-board" id="game-board">
+        <svg class="game-lines" id="game-lines" aria-hidden="true"></svg>
+        <div class="game-graphs">
+          <div class="game-entry">
+            <button type="button" class="game-graph" data-parameter="amplitude" aria-pressed="false">
+              <span class="game-graph-label">Graphique 1</span>
+              <img src="MHS_amplitude.gif" alt="Animation du graphique 1" width="2600" height="800">
+            </button>
+            <p class="game-feedback"></p>
+          </div>
+          <div class="game-entry">
+            <button type="button" class="game-graph" data-parameter="frequency" aria-pressed="false">
+              <span class="game-graph-label">Graphique 2</span>
+              <img src="MHS_frequence.gif" alt="Animation du graphique 2" width="2600" height="800">
+            </button>
+            <p class="game-feedback"></p>
+          </div>
+          <div class="game-entry">
+            <button type="button" class="game-graph" data-parameter="phase" aria-pressed="false">
+              <span class="game-graph-label">Graphique 3</span>
+              <img src="MHS_phase.gif" alt="Animation du graphique 3" width="2600" height="800">
+            </button>
+            <p class="game-feedback"></p>
+          </div>
+        </div>
+        <div class="game-answers" aria-label="Paramètres">
+          <p class="game-selection" id="game-selection">Sélectionnez un graphique.</p>
+          <p class="game-feedback" id="game-result" role="status"></p>
+          <button type="button" class="game-answer" data-parameter="frequency" disabled>
+            <span>La fréquence angulaire <i>ω</i></span><span class="game-answer-mark" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="game-answer" data-parameter="phase" disabled>
+            <span>La phase initiale <i>φ</i></span><span class="game-answer-mark" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="game-answer" data-parameter="amplitude" disabled>
+            <span>L’amplitude <i>A</i></span><span class="game-answer-mark" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+      <p class="game-progress" id="game-progress" role="status"></p>
+      <button type="button" class="game-reset" id="game-reset">Recommencer</button>
+    </section>
     <nav class="page-nav" aria-label="Navigation entre les pages">
       <a href="bloc-ressort.html">Page précédente</a>
       <a href="champ-electrique.html">Prochaine page</a>
@@ -252,6 +323,105 @@
     });
     new ResizeObserver(scheduleDraw).observe(canvas.parentElement);
     scheduleDraw();
+
+    const gameBoard = document.getElementById("game-board");
+    const gameLines = document.getElementById("game-lines");
+    const gameGraphs = [...document.querySelectorAll(".game-graph")];
+    const gameAnswers = [...document.querySelectorAll(".game-answer")];
+    const gameProgress = document.getElementById("game-progress");
+    const gameSelection = document.getElementById("game-selection");
+    const gameResult = document.getElementById("game-result");
+    let selectedGraph = null;
+    const matches = new Map();
+
+    function drawMatches() {
+      gameLines.replaceChildren();
+      const boardRect = gameBoard.getBoundingClientRect();
+      for (const [graph, answer] of matches) {
+        const from = graph.getBoundingClientRect();
+        const to = answer.getBoundingClientRect();
+        const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+        line.setAttribute("x1", from.right - boardRect.left);
+        line.setAttribute("y1", (from.top + from.bottom) / 2 - boardRect.top);
+        line.setAttribute("x2", to.left - boardRect.left);
+        line.setAttribute("y2", (to.top + to.bottom) / 2 - boardRect.top);
+        gameLines.append(line);
+      }
+    }
+
+    function selectGraph(graph) {
+      if (selectedGraph) selectedGraph.setAttribute("aria-pressed", "false");
+      selectedGraph = graph;
+      graph.setAttribute("aria-pressed", "true");
+      const feedback = graph.parentElement.querySelector(".game-feedback");
+      feedback.textContent = "";
+      feedback.className = "game-feedback";
+      gameSelection.textContent = graph.querySelector(".game-graph-label").textContent + " sélectionné.";
+      gameResult.textContent = "";
+      gameResult.className = "game-feedback";
+      for (const answer of gameAnswers) answer.disabled = answer.classList.contains("matched");
+    }
+
+    for (const graph of gameGraphs) {
+      graph.addEventListener("click", () => selectGraph(graph));
+    }
+    for (const answer of gameAnswers) {
+      answer.addEventListener("click", () => {
+        if (!selectedGraph) return;
+        const feedback = selectedGraph.parentElement.querySelector(".game-feedback");
+        if (selectedGraph.dataset.parameter !== answer.dataset.parameter) {
+          feedback.className = "game-feedback incorrect";
+          feedback.textContent = "✕ Incorrect. Essayez encore.";
+          gameResult.className = "game-feedback incorrect";
+          gameResult.textContent = "✕ Incorrect. Essayez encore.";
+          return;
+        }
+        feedback.className = "game-feedback correct";
+        const answerLabel = answer.querySelector("span").textContent;
+        const graphLabel = selectedGraph.querySelector(".game-graph-label").textContent;
+        feedback.textContent = "✓ " + answerLabel;
+        gameResult.className = "game-feedback correct";
+        gameResult.textContent = "✓ " + graphLabel + " : " + answerLabel;
+        gameSelection.textContent = graphLabel + " associé.";
+        selectedGraph.setAttribute("aria-pressed", "false");
+        selectedGraph.disabled = true;
+        answer.classList.add("matched");
+        answer.querySelector(".game-answer-mark").textContent = "✓";
+        matches.set(selectedGraph, answer);
+        selectedGraph = null;
+        for (const option of gameAnswers) option.disabled = true;
+        if (matches.size === gameGraphs.length) gameProgress.textContent = "Bravo! Toutes les associations sont correctes.";
+        drawMatches();
+      });
+    }
+    document.getElementById("game-reset").addEventListener("click", () => {
+      selectedGraph = null;
+      matches.clear();
+      gameProgress.textContent = "";
+      gameSelection.textContent = "Sélectionnez un graphique.";
+      gameResult.textContent = "";
+      gameResult.className = "game-feedback";
+      for (const graph of gameGraphs) {
+        graph.disabled = false;
+        graph.setAttribute("aria-pressed", "false");
+        const feedback = graph.parentElement.querySelector(".game-feedback");
+        feedback.textContent = "";
+        feedback.className = "game-feedback";
+      }
+      for (const answer of gameAnswers) {
+        answer.disabled = true;
+        answer.classList.remove("matched");
+        answer.querySelector(".game-answer-mark").textContent = "";
+      }
+      const answerContainer = document.querySelector(".game-answers");
+      const currentOrder = [...answerContainer.querySelectorAll(".game-answer")];
+      const otherOrders = [[0, 2, 1], [1, 0, 2], [1, 2, 0], [2, 0, 1], [2, 1, 0]];
+      const order = otherOrders[Math.floor(Math.random() * otherOrders.length)];
+      answerContainer.append(...order.map(index => currentOrder[index]));
+      drawMatches();
+    });
+    new ResizeObserver(drawMatches).observe(gameBoard);
+    window.addEventListener("resize", drawMatches);
   </script>
 </body>
 </html>
