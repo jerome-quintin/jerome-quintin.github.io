@@ -116,50 +116,8 @@
       <p class="intro">Explorez le mouvement du système bloc-ressort et ajustez la courbe sinusoïdale aux données expérimentales.</p>
     </header>-->
 
-    <div class="layout">
-      <section class="card plot-card" aria-labelledby="graph-title">
-        <div class="card-top">
-          <h2 id="graph-title">Position en fonction du temps</h2>
-          <!--<span class="caption">Mesures expérimentales et modèle</span>-->
-        </div>
-        <div class="plot-wrap">
-          <canvas id="graph" role="img" aria-label="Graphique de la position en fonction du temps : mesures expérimentales en bleu et modèle sinusoïdal en orange."></canvas>
-        </div>
-        <div class="legend">
-          <span class="legend-item"><span class="dot" aria-hidden="true"></span>Données expérimentales</span>
-          <span class="legend-item"><span class="line" aria-hidden="true"></span>Mouvement harmonique simple</span>
-        </div>
-        <div class="formula">
-          <div class="formula-label">Fonction du mouvement harmonique simple</div> <!--<div class="formula-label">Fonction affichée</div>-->
-          <p class="equation" id="equation"></p>
-          <!--<p class="equation-note">x en mm · t en ms · ω en rad/s · φ en rad</p>-->
-        </div>
-      </section>
-
-      <section class="card controls" aria-labelledby="controls-title">
-        <h2 id="controls-title">Paramètres du modèle</h2>
-        <p class="controls-intro">Déplacez les curseurs pour observer leur effet sur la courbe</p>
-        <div class="control">
-          <div class="control-head"><label for="amplitude">Amplitude <i>A</i></label><output id="amplitude-value" for="amplitude"></output></div>
-          <input id="amplitude" type="range" min="10" max="75" step="0.01" value="56.81">
-          <div class="bounds"><span>10 mm</span><span>75 mm</span></div>
-        </div>
-        <div class="control">
-          <div class="control-head"><label for="frequency">Fréquence angulaire <i>ω</i></label><output id="frequency-value" for="frequency"></output></div>
-          <input id="frequency" type="range" min="4.0" max="7.0" step="0.01" value="5.55">
-          <div class="bounds"><span>4,0 rad/s</span><span>7,0 rad/s</span></div>
-        </div>
-        <div class="control">
-          <div class="control-head"><label for="phase">Phase initiale <i>φ</i></label><output id="phase-value" for="phase"></output></div>
-          <input id="phase" type="range" min="0" max="6.28" step="0.01" value="6.20">
-          <div class="bounds"><span>0 rad</span><span>2π rad</span></div>
-        </div>
-        <button id="reset" type="button">Rétablir les paramètres initiaux</button>
-        <!--<p class="footnote">Les valeurs initiales correspondent approximativement aux mesures. Le temps est converti en secondes dans le calcul du sinus.</p>-->
-      </section>
-    </div>
     <section class="card matching-game" aria-labelledby="game-title">
-      <h2 id="game-title">Reliez les graphiques aux paramètres</h2>
+      <h2 id="game-title">Jeu : reliez les graphiques aux paramètres</h2>
       <p class="game-instructions">Sélectionnez un graphique, puis le paramètre qui varie dans l’animation.</p>
       <div class="game-board" id="game-board">
         <svg class="game-lines" id="game-lines" aria-hidden="true"></svg>
@@ -203,6 +161,49 @@
       <p class="game-progress" id="game-progress" role="status"></p>
       <button type="button" class="game-reset" id="game-reset">Recommencer</button>
     </section>
+
+    <div class="layout">
+      <section class="card plot-card" aria-labelledby="graph-title">
+        <div class="card-top">
+          <h2 id="graph-title">Pour vous pratiquer davantage</h2>
+          <!--<span class="caption">Mesures expérimentales et modèle</span>-->
+        </div>
+        <div class="plot-wrap">
+          <canvas id="graph" role="img" aria-label="Graphique de la position en fonction du temps : mesures expérimentales en bleu et modèle sinusoïdal en orange."></canvas>
+        </div>
+        <div class="legend">
+          <span class="legend-item"><span class="dot" aria-hidden="true"></span>Données expérimentales</span>
+          <span class="legend-item"><span class="line" aria-hidden="true"></span>Mouvement harmonique simple</span>
+        </div>
+        <div class="formula">
+          <div class="formula-label">Fonction du mouvement harmonique simple</div> <!--<div class="formula-label">Fonction affichée</div>-->
+          <p class="equation" id="equation"></p>
+          <!--<p class="equation-note">x en mm · t en ms · ω en rad/s · φ en rad</p>-->
+        </div>
+      </section>
+
+      <section class="card controls" aria-labelledby="controls-title">
+        <h2 id="controls-title">Paramètres du modèle</h2>
+        <p class="controls-intro">Déplacez les curseurs pour observer leur effet sur la courbe</p>
+        <div class="control">
+          <div class="control-head"><label for="amplitude">Amplitude <i>A</i></label><output id="amplitude-value" for="amplitude"></output></div>
+          <input id="amplitude" type="range" min="10" max="75" step="0.01" value="56.81">
+          <div class="bounds"><span>10 mm</span><span>75 mm</span></div>
+        </div>
+        <div class="control">
+          <div class="control-head"><label for="frequency">Fréquence angulaire <i>ω</i></label><output id="frequency-value" for="frequency"></output></div>
+          <input id="frequency" type="range" min="4.0" max="7.0" step="0.01" value="5.55">
+          <div class="bounds"><span>4,0 rad/s</span><span>7,0 rad/s</span></div>
+        </div>
+        <div class="control">
+          <div class="control-head"><label for="phase">Phase initiale <i>φ</i></label><output id="phase-value" for="phase"></output></div>
+          <input id="phase" type="range" min="0" max="6.28" step="0.01" value="6.20">
+          <div class="bounds"><span>0 rad</span><span>2π rad</span></div>
+        </div>
+        <button id="reset" type="button">Rétablir les paramètres initiaux</button>
+        <!--<p class="footnote">Les valeurs initiales correspondent approximativement aux mesures. Le temps est converti en secondes dans le calcul du sinus.</p>-->
+      </section>
+    </div>
     <nav class="page-nav" aria-label="Navigation entre les pages">
       <a href="bloc-ressort.html">Page précédente</a>
       <a href="champ-electrique.html">Prochaine page</a>
