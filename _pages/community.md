@@ -7,7 +7,7 @@ title: "Community, Outreach and Press"
 
 ## Community
 
-- I was one of the organizers of the conference [50 Years of Horndeski Gravity: Exploring Modified Gravity](https://events.perimeterinstitute.ca/event/66/) held at the Perimeter Institute and University of Waterloo the week of July 15, 2024
+- I was one of the organizers of the conference [50 Years of Horndeski Gravity: Exploring Modified Gravity](https://events.perimeterinstitute.ca/event/66/) held at the Perimeter Institute and University of Waterloo the week of July 15, 2024. Among other things, you can watch the Town Hall I moderated: [video](https://pirsa.org/24070051){: .btn .btn--info}
 - In 2020 I organized a [Winter School on Theoretical Cosmology at Nordita](https://indico.fysik.su.se/event/6662/overview)
 - At McGill I was the [hep-th journal club organizer](http://www.physics.mcgill.ca/~jquintin/HEPTHwebsite.html)
 
